@@ -36,7 +36,6 @@
             </nav>
         </div>
     </header>
-    
     <main>
         <div class="row">
             <div class="col s3 m0 l3"> <!-- Side nav -->
@@ -205,6 +204,19 @@
                                 </div>
                             </div>
                         </div>
+                </div>
+                <div class="row">
+                    <div class="col s9 offset-s2 m8 offset-m4 l18 offset-l4">
+                         <ul class="pagination">
+                            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                            <li class="active"><a href="#!">1</a></li>
+                            <li class="waves-effect"><a href="#!">2</a></li>
+                            <li class="waves-effect"><a href="#!">3</a></li>
+                            <li class="waves-effect"><a href="#!">4</a></li>
+                            <li class="waves-effect"><a href="#!">5</a></li>
+                            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                        </ul>
+                    </div>
                 </div> 
             </div><!-- fin contenido principal -->           
         </div>     
