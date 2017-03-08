@@ -36,7 +36,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="grey lighten-5">
         <div class="row">
             <div class="col s3 m0 l3"> <!-- Side nav -->
                 <ul id="slide-out" class="side-nav fixed">

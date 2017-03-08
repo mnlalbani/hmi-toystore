@@ -48,7 +48,7 @@
                            <table class="table-responsive bordered highlight">
                                <thead>
                                    <tr>
-                                       <h5>Seleccione un Método de Pago</h5>
+                                       <h5 class="flow-text">Seleccione un Método de Pago</h5>
                                    </tr>
                                </thead>
                                <tbody>
@@ -132,7 +132,7 @@
                         </div> <!-- fin card-panel -->
                         <div class="section"></div>
                         <blockquote cite="" class="">
-                            <h5>Puede revisar su orden antes de finalizar.</h5>
+                            <h5 class="flow-text">Puede revisar su orden antes de finalizar.</h5>
                         </blockquote>
                     </div>
                 </div>

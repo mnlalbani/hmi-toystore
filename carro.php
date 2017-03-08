@@ -26,7 +26,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="grey lighten-5">
         <div class="section"></div>
         <div class="row">
             <div class="col s12 m12 l7">
