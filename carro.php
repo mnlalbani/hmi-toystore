@@ -16,7 +16,7 @@
         <div class="navbar-fixed"> <!-- Barra de Navegación -->
             <nav>
                 <div class="nav-wrapper">
-                    <a href="index.php" class="brand-logo"><img src="images/logo/logo.svg" alt=""></a>
+                    <a href="index.php" class="brand-logo">LOGO</a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#"><i class="material-icons left">search</i>Búsqueda</a></li>
                         <li><a href="login.php"><i class="material-icons left">account_circle</i>Ingresa</a></li>
@@ -119,7 +119,7 @@
                                             <label for="icon_telephone">Precio Total</label>
                                             </div>
                                         </div>
-                                        <button class="col s12 center-align waves-effect waves-light btn"type="submit">Comprar</button>
+                                        <button class="col s12 center-align waves-effect waves-light btn"type="submit">Continuar</button>
                                     </div>
                                 </div>
                             </form>

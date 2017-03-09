@@ -32,14 +32,27 @@
         </div>
     </header>
    
-        <main> <!-- Seccion del login -->
+        <main class="grey lighten-5"> <!-- Seccion del login -->
+        <div class="row">
+            <div class="section">
+            </div>
+            <div class="col s12 m6 offset-m3 l6 offset-l3">
+                <ul class="tabs grey lighten-5">
+                    <div class="row">
+                        <li class="tab col s3 disabled" ><a class="active" href="#test1">Login</a></li>
+                        <li class="tab col s3 disabled" ><a href="#test2">Dirección</a></li>
+                        <li class="tab col s3 disabled" ><a  href="#test3">Pago</a></li>
+                        <li class="tab col s3 disabled" ><a href="#test4">Ordena</a></li>
+                    </div>
+                </ul>  
+            </div>
+        </div>
          <div class="container center-align">
-            <div class="section"></div> <!-- Separador -->
             <div class="section"></div>
             <h5 class="indigo-text">Por favor, ingrese a su cuenta</h5>
             <div class="section"></div>
             <div class="container">
-                <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+                <div class="z-depth-1 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
                 <form class="col s12" method="post">
                     <div class='row'>
                     <div class='col s12'>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     
-    <title>Vista Carro de Compras</title>
+    <title>Dirección de Envío</title>
 </head>
 <body>
     <header>
