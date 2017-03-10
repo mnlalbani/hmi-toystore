@@ -24,7 +24,7 @@
 <body>
     <header>
         <div class="navbar-fixed"> <!-- Barra de Navegación -->
-            <nav>
+            <nav class="blue">
                 <div class="nav-wrapper">
                     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul class="right">
@@ -221,7 +221,7 @@
             </div><!-- fin contenido principal -->           
         </div>     
     </main>
-    <footer class="page-footer"> <!-- Footer -->
+    <footer class="page-footer blue"> <!-- Footer -->
           <div class="container">
             <div class="row">
               <div class="col l6 s12">

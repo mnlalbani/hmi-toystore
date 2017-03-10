@@ -19,13 +19,13 @@
 <body>
     <header>
         <div class="navbar-fixed"> <!-- Barra de Navegación -->
-            <nav>
+            <nav class="light-blue lighten-2">
                 <div class="nav-wrapper">
-                    <a href="index.php" class="brand-logo">Logo</a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="#"><i class="material-icons left">search</i>Búsqueda</a></li>
-                        <li><a href="login.php"><i class="material-icons left">account_circle</i>Ingresa</a></li>
-                        <li><a href="carro.php"><i class="material-icons left">shopping_cart</i>Carro</a></li>
+                    <a href="index.php" class="brand-logo left">Logo</a>
+                    <ul class="right">
+                        <li><a href="#"><i class="material-icons left">search</i><span class="hide-on-med-and-down">Búsqueda</span></a></li>
+                        <li><a href="login.php"><i class="material-icons left">account_circle</i><span class="hide-on-med-and-down">Ingresa</span></a></li>
+                        <li><a href="carro.php"><i class="material-icons left">shopping_cart</i><span class="hide-on-med-and-down">Carro</span></a></li>
                     </ul>
                 </div>
             </nav>

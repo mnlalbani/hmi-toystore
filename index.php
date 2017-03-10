@@ -2,115 +2,139 @@
 <html lang="en">
 <head>
     <script type="text/javascript" src="js/jquery-3.1.1.min"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
+    
     <meta charset="UTF-8">
     
     <title>Inicio Juguetería</title>
+    <style>
+        .nav-wrapper .input-field input[type=search] {
+  height: 64px;
+}
+.nav-wrapper input[type="search"]:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.input-field label {
+  max-height: 64px;
+}
+.nav-wrapper input[type="search"]:focus ~ .label-icon.active {
+  position: fixed;
+  left: 10px;
+}
+.nav-wrapper input[type="search"]:focus ~ .closed {
+  position: fixed;
+  right: 10px;
+}
+    </style>
 </head>
 <body>
     <header>
         <div class="navbar-fixed"> <!-- Barra de Navegación -->
-            <nav>
+            <nav class="light-blue lighten-2">
                 <div class="nav-wrapper">
-                    <a href="index.php" class="brand-logo">Logo</a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="#"><i class="material-icons left">search</i>Búsqueda</a></li>
-                        <li><a href="login.php"><i class="material-icons left">account_circle</i>Ingresa</a></li>
-                        <li><a href="carro.php"><i class="material-icons left">shopping_cart</i>Carro</a></li>
+                    <a href="index.php" class="brand-logo left">Logo</a>
+                    <ul class="right">
+                        <li>
+                            <form>
+                                <div class="input-field">
+                                    <input id="search" type="search" placeholder="Búsqueda">
+                                    <label class="label-icon" for="search"><i class="material-icons left tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ingresa">search</i></label>
+                                    <i class="material-icons">close</i>
+                                </div>
+                            </form>
+                        </li>
+                        <li><a href="login.php"><i class="material-icons left tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ingresa">account_circle</i><span class="hide-on-med-and-down">Ingresa</span></a></li>
+                        <li><a href="carro.php"><i class="material-icons left tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de Compras">shopping_cart</i><span class="hide-on-med-and-down">Carro</span></a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-    <main>  
-<div class="card-panel">
-    <div class="carousel carousel-slider s12 m12 l12" data-indicators="true">
-            <div class="carousel-item">
-                <a href="lista.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive">
-                    
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a  href="lista.php"><img src="http://lorempixel.com/800/400/food/2" class="img-responsive"></a>
-            </div>
-            <div class="carousel-item">
-                <a  href="lista.php"><img src="http://lorempixel.com/800/400/food/3" class="img-responsive"></a>
-            </div>
-            <div class="carousel-item">
-                <a  href="lista.php"><img src="http://lorempixel.com/800/400/food/4" class="img-responsive"></a>
-            </div>
-        </div>
-</div>
-        
-
-    <div class="row">
-        <div class="categoria m11 l11 hide-on-small-only">
-            <img src="images/NOA_8879.jpg" class="responsive-img" alt="">
-        </div>
-    </div>
+    <main class="grey lighten-4">  
         <div class="row">
-            <div class="col s12 m12 l6">
-                <div class="card-panel">
+            <div class="carousel carousel-slider z-depth-1" data-indicators="true">
+                    <div class="carousel-item">
+                        <a href="#one!"><img src="images/toy-store-1.jpg" class="responsive-img"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a  href="#two!"><img src="images/toy-store-1.jpg" class="responsive-img"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a  href="#three!"><img src="images/toy-store-3.jpg" class="responsive-img"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a  href="#four!"><img src="images/toy-store-4.jpg" class="responsive-img"></a>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="categoria m11 l11 hide-on-small-only">
+                <img src="images/NOA_8879.jpg" class="responsive-img" alt="">
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="col s12 m12 l6"><!-- destacados -->
+                <div class="card-panel grey lighten-5">
                     <div class="row">
-                        <h3>Destacados</h3>
+                        <h3 class="grey-text text-darken-3">Destacados</h3>
                         <div class="col s12 m6 l6">
-                             <div class="card hoverable">
+                             <div class="card hoverable light-blue">
                                 <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
+                                    <a href="producto.php"><img src="images/toy-store-4.jpg" class="responsive-img"></a>
+                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light orange accent-3 tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
                                 </div>
                                 <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
+                                    <a class="card-title white-text flow-text" href="producto.php">Producto</a>
+                                    <p class="truncate white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col s12 m6 l6">
-                             <div class="card hoverable">
+                             <div class="card hoverable light-blue">
                                 <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
+                                    <a href="producto.php"><img src="images/toy-store-4.jpg" class="responsive-img"></a>
+                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light orange accent-3  tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
                                 </div>
                                 <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
+                                    <a class="card-title white-text" href="producto.php">Producto</a>
+                                    <p class="truncate white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col s12 m12 l6">
-                <div class="card-panel">
+            <div class="col s12 m12 l6"> <!-- nuevos -->
+                <div class="card-panel grey lighten-5">
                     <div class="row">
-                        <h3>Nuevo</h3>
+                        <h3 class="grey-text text-darken-3">Nuevo</h3>
                         <div class="col s12 m6 l6">
-                             <div class="card hoverable">
+                             <div class="card hoverable light-blue">
                                 <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
+                                    <a href="producto.php"><img src="images/toy-store-4.jpg" class="responsive-img"></a>
+                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light orange accent-3 tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
                                 </div>
                                 <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
+                                    <a class="card-title white-text" href="producto.php">Producto</a>
+                                    <p class="truncate white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col s12 m6 l6">
-                             <div class="card hoverable">
+                             <div class="card hoverable light-blue">
                                 <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
+                                    <a href="producto.php"><img src="images/toy-store-4.jpg" class="responsive-img"></a>
+                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light orange accent-3 tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
                                 </div>
                                 <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
+                                    <a class="card-title white-text" href="producto.php">Producto</a>
+                                    <p class="truncate white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +144,7 @@
         </div>
 
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer light-blue lighten-2">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -147,5 +171,7 @@
             </div>
           </div>
         </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+        
 </body>
 </html>
