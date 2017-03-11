@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    setcookie("producto");
+    include("php/mostrar-producto.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,31 +38,31 @@
             <div class="col s12 m12 l7"> <!-- contenedor SLider e imagenes-->
                 <div class="carousel carousel-slider z-depth-1" data-indicators="true">
                     <div class="carousel-item">
-                        <a href="#one!"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
+                        <a href="#one!"><img src="<?php echo $_COOKIE['img1'];?>" class="img-responsive"></a>
                     </div>
                     <div class="carousel-item">
-                        <a  href="#two!"><img src="http://lorempixel.com/800/400/food/2" class="img-responsive"></a>
+                        <a  href="#two!"><img src="<?php echo $_COOKIE['img2'];?>" class="img-responsive"></a>
                     </div>
                     <div class="carousel-item">
-                        <a  href="#three!"><img src="http://lorempixel.com/800/400/food/3" class="img-responsive"></a>
+                        <a  href="#three!"><img src="<?php echo $_COOKIE['img3'];?>" class="img-responsive"></a>
                     </div>
                     <div class="carousel-item">
-                        <a  href="#four!"><img src="http://lorempixel.com/800/400/food/4" class="img-responsive"></a>
+                        <a  href="#four!"><img src="<?php echo $_COOKIE['img4'];?>" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="section"></div>
                 <div class="row hide-on-med-and-down"> <!-- contenedor imagenes secundarias -->
                     <div class="col s3 m3 l3">
-                            <img src="http://lorempixel.com/800/400/food/2" alt="" class="responsive-img z-depth-2">
+                            <img src="<?php echo $_COOKIE['img1']?>" alt="" class="responsive-img z-depth-2">
                     </div>
                     <div class="col s3 m3 l3">
-                            <img src="http://lorempixel.com/800/400/food/2" alt="" class="responsive-img z-depth-2">
+                            <img src="<?php echo $_COOKIE['img2'];?>" alt="" class="responsive-img z-depth-2">
                     </div>
                     <div class="col s3 m3 l3">
-                            <img src="http://lorempixel.com/800/400/food/2" alt="" class="responsive-img z-depth-2">
+                            <img src="<?php echo $_COOKIE['img3'];?>" alt="" class="responsive-img z-depth-2">
                     </div>
                     <div class="col s3 m3 l3">
-                            <img src="http://lorempixel.com/800/400/food/2" alt="" class="responsive-img z-depth-2">
+                            <img src="<?php echo $_COOKIE['img4'];?>" alt="" class="responsive-img z-depth-2">
                     </div>
                 </div>
             </div> <!-- fin contenedor slider -->
@@ -66,12 +71,12 @@
                 <div class="row">
                     <div class="col s12">
                         <div class="card-panel">
-                            <b>Descripción</b>
-                            <p class="descripcion-producto flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum porro in fugit natus quia consectetur autem libero, aliquam blanditiis magni quo odio pariatur, modi ut sit dolore fuga necessitatibus vero.</p>
+                            <b><?php echo $_COOKIE['nombre'];?></b>
+                            <p class="descripcion-producto flow-text"><?php echo $_COOKIE['descripcion'];?></p>
                             <div class="left-align valign-wrapper">
                                 <b>&nbsp;&nbsp;&nbsp;Precio: </b>
                                 <i class="material-icons">attach_money</i>
-                                <span class="precio-producto"></span>
+                                <span class="precio-producto"><?php echo $_COOKIE['precio'];?></span>
                             </div>
                             <form method="POST" action="" id="formulario-comprar">
                                 <div class="row">
