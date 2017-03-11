@@ -64,8 +64,8 @@
                                             <blockquote cite="">
                                                <span class="flow-text">
                                                     <?php
-                                                        $direccion = $_SESSION['carro-direccion'];
-                                                        echo $direccion[0]['direccion'];
+                                                        $pago = $_SESSION['carro-direccion'];
+                                                        echo $pago[0]['direccion'];
                                                      ?>
                                                 </span>
                                                <br>
@@ -124,7 +124,7 @@
                             <tbody>
                                 <tr>
                                     <td>Producto (s)</td>
-                                    <td><span>$<?php echo $total;?></span></td>
+                                    <td><span>$ <?php echo $total;?></span></td>
                                 </tr>
                                 <tr>
                                     <td>Envío y manejo</td>
@@ -132,7 +132,7 @@
                                 </tr>
                                 <tr>
                                     <td>Total antes de impuestos</td>
-                                    <td><span>$<?php echo $total+10;?></span></td>
+                                    <td><span>$ <?php echo $total+10;?></span></td>
                                 </tr>
                                 <tr>
                                     <td>Impuesto estimado</td>
@@ -140,30 +140,15 @@
                                 </tr>
                                 <tr>
                                     <td>Total a pagar</td>
-                                    <td><span>$<?php echo ($total+10) + ((10/100)* $total);?></span></td>
+                                    <td><span>$ <?php echo ($total+10) + ((10/100)* $total);?></span></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <div class="card-action">
-                        <form action="" id="formulario-checkout" method="POST">
+                        <form action="">
                             <div class="row">
                                 <div class="col s12 m12 l12">
-                                    <?php $sum = ($total+10) + ((10/100)* $total); ?>
-                                    <input hidden type="text" name="preciototal" value='<?php echo $sum; ?>'>
-                                    <input hidden type="text" name="direccion" value='<?php echo $direccion[0]['direccion']; ?>'>
-                                    <input hidden type="text" name="metodopago" value='<?php echo $pago[0]['pago']; ?>'>
-                                    <input hidden type="text" name="usuarioid" value="<?php echo $_SESSION['usuarioid']; ?>">
-                                    <?php 
-                                        $num = 0;
-                                        for($i=0;$i<count($datos);$i++){
-                                            echo "<input hidden type='' name='articuloid[".$i."]' value='".$datos[$i]['id']."'>";
-                                            echo "<input hidden type='' name='articulocantidad[".$i."]' value='".$datos[$i]['cantidad']."'>";
-                                            $num++;
-                                            
-                                        }
-                                        //echo "<input hidden type='' name='numeroarticulos value='".$num."'>";
-                                    ?>
                                     <button class="col s12 m12 l12 waves-effect waves-light btn"type="submit">Haga su Orden</button>
                                 </div>
                             </div>
