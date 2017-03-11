@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- local materialize files 
+    <script src="js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    -->
     <meta charset="UTF-8">
     <title>Vista Lista de Articulos</title>
     <style>
@@ -24,9 +28,10 @@
 <body>
     <header>
         <div class="navbar-fixed"> <!-- Barra de Navegación -->
-            <nav class="blue">
+            <nav class="light-blue lighten-2">
                 <div class="nav-wrapper">
                     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <a href="index.php" class="brand-logo">Logo</a>
                     <ul class="right">
                         <li><a href="#"><i class="material-icons left">search</i></a></li>
                         <li><a href="login.php"><i class="material-icons left">account_circle</i></a></li>
@@ -39,171 +44,32 @@
     <main class="grey lighten-5">
         <div class="row">
             <div class="col s3 m0 l3"> <!-- Side nav -->
-                <ul id="slide-out" class="side-nav fixed">
-                    <li>
-                        <nav>
-                            <div class="nav-wrapper">
-                                <a href="index.php" class="brand-logo">Logo</a>
-                            </div>
-                        </nav>
-                    </li>
-                    <li><a href="#!">Filtro</a></li>
-                    <li><a href="#!">Filtro</a></li>
-                    <hr>
-                    <li><a href="#!">Filtro</a></li>
-                    <li><a href="#!">Filtro</a></li>
-                    <hr>
-                    <li><a href="#!">Filtro</a></li>
+                <ul id="slide-out" class="side-nav fixed collection with-header">
+                    <li class="collection-header collection-header">Ver todo</li>
+                    <li class="collection-header collection-header">Categorias</li>
+                    <a href="lista.php?categoria=nino" class="collection-item">Niños</a>
+                    <a href="lista.php?categoria=nina" class="collection-item">Niñas</a>
+                    <a href="lista.php?categoria=bebes" class="collection-item">Bebés</a>
+                    <a href="lista.php?categoria=exterior" class="collection-item">Exterior</a>
+                    <a href="lista.php?categoria=videojuego" class="collection-item">Videojuegos</a>
+                    <li class="collection-header">Marcas</li>
+                    <a href="lista.php?marca=fisher-price" class="collection-item">Fisher Price</a>
+                    <a href="lista.php?marca=disney" class="collection-item">Disney</a>
+                    <a href="lista.php?marca=lego" class="collection-item">LEGO</a>
+                    <a href="lista.php?marca=nintendo" class="collection-item">Nintendo</a>
+                    <a href="lista.php?marca=marvel" class="collection-item">Marvel</a>
+                    <a href="" class="collection-item">Star Wars</a>
+                    <li class="collection-header">Precios</li>
+                    <li class="collection-item"></li>
                 </ul>
             </div>
             <div class="col s12 m12 l9"> <!-- contenido principal -->
                 <div class="">
                     <div class="section"></div>
                     <div class="row"> <!-- primera fila -->
-                        <div class="col s6 m4 l3">
-                            <div class="card hoverable">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s6 m4 l3">
-                            <div class="card hoverable">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s6 m4 l3">
-                            <div class="card hoverable">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s6 m4 l3">
-                            <div class="card hoverable">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s6 m4 l3">
-                            <div class="card hoverable">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s6 m4 l3">
-                            <div class="card hoverable">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s6 m4 l3">
-                            <div class="card hoverable">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s6 m4 l3">
-                            <div class="card hoverable">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s6 m4 l3">
-                            <div class="card hoverable">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s6 m4 l3">
-                            <div class="card hoverable">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s6 m4 l3">
-                            <div class="card hoverable">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s6 m4 l3">
-                            <div class="card hoverable">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="http://lorempixel.com/800/400/food/1" class="img-responsive"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title" href="producto.php">Producto</a>
-                                    <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <?php 
+                            include("php/lista-producto.php");
+                        ?>
                 </div>
                 <div class="row">
                     <div class="col s9 offset-s2 m8 offset-m4 l18 offset-l4">
@@ -221,7 +87,7 @@
             </div><!-- fin contenido principal -->           
         </div>     
     </main>
-    <footer class="page-footer blue"> <!-- Footer -->
+    <footer class="page-footer light-blue lighten-2"> <!-- Footer -->
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
