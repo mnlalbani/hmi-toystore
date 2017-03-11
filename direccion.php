@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +44,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col s12 m12 l7">
+            <div class="col s12 m12 l7"> <!--lista de direcciones -->
                 <div class="row">
                     <div class="col s12">
                         <div class="card-panel">
@@ -53,51 +56,9 @@
                                </thead>
                                <tbody>
                                    <form action="">
-                                        <tr> <!-- Fila de tabla pago -->
-                                            <td>
-                                                    <p>
-                                                        <input class="with-gap" name="group3" type="radio" id="test1"  />
-                                                        <label for="test1"></label>
-                                                    </p>
-                                            </td>
-                                            <td>
-                                                <p class="card-number">Dirección Dirección Dirección dirección...</p>
-                                            </td>
-                                        </tr><!-- fin fila tabla pago -->
-                                        <tr> <!-- Fila de tabla pago -->
-                                            <td>
-                                                    <p>
-                                                        <input class="with-gap" name="group3" type="radio" id="test2"  />
-                                                        <label for="test2"></label>
-                                                    </p>
-                                            </td>
-                                            <td>
-                                                <p class="card-number">Dirección Dirección Dirección dirección...</p>
-                                            </td>
-                                        </tr><!-- fin fila tabla pago -->
-                                        <tr> <!-- Fila de tabla pago -->
-                                            <td>
-                                                    <p>
-                                                        <input class="with-gap" name="group3" type="radio" id="test3"  />
-                                                        <label for="test3"></label>
-                                                    </p>
-                                            </td>
-                                            <td>
-                                                <p class="card-number">Dirección Dirección Dirección dirección...</p>
-                                            </td>
-                                        </tr><!-- fin fila tabla pago -->
-                                        <tr> <!-- Fila de tabla pago -->
-                                            <td>
-                                                    <p>
-                                                        <input class="with-gap" name="group3" type="radio" id="test4"  />
-                                                        <label for="test4"></label>
-                                                    </p>
-                                            </td>
-                                            <td>
-                                                <p class="card-number">Dirección Dirección Dirección dirección...</p>
-                                            </td>
-                                        </tr><!-- fin fila tabla pago -->
-                                       
+                                       <?php
+                                            include("php/lista-direcciones.php");
+                                       ?>
                                    </form>  
                                </tbody>
                            </table>
@@ -106,7 +67,7 @@
                         </div> <!-- fin card-panel -->
                     </div>
                 </div>
-            </div> <!-- lista de artiuclos -->
+            </div> <!-- lista de direcciones -->
             <div class="col s12 m12 l5"><!-- lista de articulos y compra -->
                 <div class="row">
                     <div class="col s12">

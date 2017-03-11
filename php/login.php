@@ -15,6 +15,7 @@
 
       while($a = mysqli_fetch_assoc($result)){
         $_SESSION['correo'] = $correo;
+        $_SESSION['usuarioid'] = $a['usuarioid'];
         $_SESSION['tipo'] = $a['tipo'];
         
       }
