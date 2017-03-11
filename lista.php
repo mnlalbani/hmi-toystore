@@ -45,7 +45,7 @@
         <div class="row">
             <div class="col s3 m0 l3"> <!-- Side nav -->
                 <ul id="slide-out" class="side-nav fixed collection with-header">
-                    <li class="collection-header collection-header">Ver todo</li>
+                    <a href="lista.php" class="collection-item">Ver todo</a>
                     <li class="collection-header collection-header">Categorias</li>
                     <a href="lista.php?categoria=nino" class="collection-item">Niños</a>
                     <a href="lista.php?categoria=nina" class="collection-item">Niñas</a>
