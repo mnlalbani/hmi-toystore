@@ -17,5 +17,13 @@ view.css('height', 400);
       //Side Nav
       $(".button-collapse").sideNav();
 
-      //Login
+      //registrar usuario
+      $("#registrarUsuario").unbind();
+      $('#registrarUsuario').on('submit',function(e){
+            e.preventDefault();
+            var details = $('#registrarUsuario').serialize();
+            $.post('php/usuario.php',details,function(data){
+
+            })
+      })
 });
