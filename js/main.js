@@ -23,7 +23,17 @@ view.css('height', 400);
             e.preventDefault();
             var details = $('#registrarUsuario').serialize();
             $.post('php/usuario.php',details,function(data){
+                  var arr = JSON.parse(data);
+            console.log(arr);
+            if(arr.success) { //Si el registro fué completado
+				alert(arr.respuesta);
+				window.location = "login.php";
 
+			}
+			else{ //Si ocurrió un error al registrar
+				alert(arr.respuesta);
+				window.location = "registro.php";
+			}
             })
       })
 });
