@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,6 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
-    
     <title>Método de Pago</title>
 </head>
 <body>
@@ -50,65 +52,18 @@
                                    <tr>
                                        <h5 class="flow-text">Seleccione un Método de Pago</h5>
                                    </tr>
+                                   <tr>
+                                       <td>Nombre</td>
+                                       <td>Termina en</td>
+                                       <td>Expira en</td>
+                                   </tr>
+                                </tr>  
                                </thead>
                                <tbody>
                                    <form action="">
-                                        <tr> <!-- Fila de tabla pago -->
-                                            <td>
-                                                    <p>
-                                                        <input class="with-gap" name="group3" type="radio" id="test1"  />
-                                                        <label for="test1">LOGO</label>
-                                                    </p>
-                                            </td>
-                                            <td>
-                                                <p class="card-number">Termina en</p>
-                                            </td>
-                                            <td>
-                                                <p class="card-expire">Expira el</p>
-                                            </td>
-                                        </tr><!-- fin fila tabla pago -->
-                                        <tr> <!-- Fila de tabla pago -->
-                                            <td>
-                                                    <p>
-                                                        <input class="with-gap" name="group3" type="radio" id="test2"  />
-                                                        <label for="test2"><img src="" alt="">LOGO</label>
-                                                    </p>
-                                            </td>
-                                            <td>
-                                                <p class="card-number">Termina en</p>
-                                            </td>
-                                            <td>
-                                                <p class="card-expire">Expira el</p>
-                                            </td>
-                                        </tr><!-- fin fila tabla pago -->
-                                        <tr> <!-- Fila de tabla pago -->
-                                            <td>
-                                                    <p>
-                                                        <input class="with-gap" name="group3" type="radio" id="test3"  />
-                                                        <label for="test3"><img src="" alt="">LOGO</label>
-                                                    </p>
-                                            </td>
-                                            <td>
-                                                <p class="card-number">Termina en</p>
-                                            </td>
-                                            <td>
-                                                <p class="card-expire">Expira el</p>
-                                            </td>
-                                        </tr><!-- fin fila tabla pago -->
-                                        <tr> <!-- Fila de tabla pago -->
-                                            <td>
-                                                    <p>
-                                                        <input class="with-gap" name="group3" type="radio" id="test4"  />
-                                                        <label for="test4"><img src="" alt="">LOGO</label>
-                                                    </p>
-                                            </td>
-                                            <td>
-                                                <p class="card-number">Termina en</p>
-                                            </td>
-                                            <td>
-                                                <p class="card-expire">Expira el</p>
-                                            </td>
-                                        </tr><!-- fin fila tabla pago -->
+                                       <?php
+                                            include("php/lista-pago.php");
+                                        ?>
                                    </form>  
                                </tbody>
                            </table>
@@ -117,8 +72,8 @@
                         </div> <!-- fin card-panel -->
                     </div>
                 </div>
-            </div> <!-- lista de artiuclos -->
-            <div class="col s12 m12 l5"><!-- lista de articulos y compra -->
+            </div> <!-- lista de metodos de pago -->
+            <div class="col s12 m12 l5"><!-- lista de  compra -->
                 <div class="row">
                     <div class="col s12">
                         <div class="card-panel">
