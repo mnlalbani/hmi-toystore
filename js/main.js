@@ -16,4 +16,6 @@ view.css('height', 400);
       $('select').material_select();
       //Side Nav
       $(".button-collapse").sideNav();
+
+      //Login
 });

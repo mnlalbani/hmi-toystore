@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    if(isset($_SESSION['correo'])){
+        header("location: index.php");
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +61,7 @@
             <div class="section"></div>
             <div class="container">
                 <div class="z-depth-1 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
-                <form class="col s12" method="post">
+                <form class="col s12" method="post" id="login-form" action="php/login.php">
                     <div class='row'>
                     <div class='col s12'>
                     </div>
@@ -74,7 +82,7 @@
                         <input class='validate' type='password' name='password' id='password'>
                     </div>
                     <label style='float: right;'>
-                        <a class='pink-text' href='#!'><b>Olvidó su contraseña?</b></a>
+                        <a class='pink-text hidden' href='#!'><b>Olvidó su contraseña?</b></a>
                     </label>
                     </div>
                     <br />

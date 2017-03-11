@@ -83,30 +83,9 @@
                 <div class="card-panel grey lighten-5">
                     <div class="row">
                         <h3 class="grey-text text-darken-3">Destacados</h3>
-                        <div class="col s12 m6 l6">
-                             <div class="card hoverable light-blue">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="images/toy-store-4.jpg" class="responsive-img"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light orange accent-3 tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title white-text flow-text" href="producto.php">Producto</a>
-                                    <p class="truncate white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6 l6">
-                             <div class="card hoverable light-blue">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="images/toy-store-4.jpg" class="responsive-img"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light orange accent-3  tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title white-text" href="producto.php">Producto</a>
-                                    <p class="truncate white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <?php 
+                            include_once("php/index-destacados.php");
+                        ?>
                     </div>
                 </div>
             </div>
@@ -114,30 +93,9 @@
                 <div class="card-panel grey lighten-5">
                     <div class="row">
                         <h3 class="grey-text text-darken-3">Nuevo</h3>
-                        <div class="col s12 m6 l6">
-                             <div class="card hoverable light-blue">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="images/toy-store-4.jpg" class="responsive-img"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light orange accent-3 tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title white-text" href="producto.php">Producto</a>
-                                    <p class="truncate white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6 l6">
-                             <div class="card hoverable light-blue">
-                                <div class="card-image">
-                                    <a href="producto.php"><img src="images/toy-store-4.jpg" class="responsive-img"></a>
-                                    <a href="carro.php" class="hoverable btn-floating halfway-fab waves-effect waves-light orange accent-3 tooltipped" data-position="top" data-delay="50" data-tooltip="Agregar al carrito"><i class="material-icons">add</i></a>
-                                </div>
-                                <div class="card-content">
-                                    <a class="card-title white-text" href="producto.php">Producto</a>
-                                    <p class="truncate white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum id, in earum rerum facere porro explicabo voluptas nisi fugiat ab impedit nulla quas dolorem. Quaerat error laborum ipsa aliquid tenetur?.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <?php 
+                            include_once("php/index-nuevos.php");
+                        ?>
                     </div>
                 </div>
             </div>
