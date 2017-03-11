@@ -77,7 +77,7 @@
                 <div class="row">
                     <div class="col s12">
                         <div class="card-panel">
-                            <form method="POST" action="" id="formulario-comprar">
+                            <form method="POST" action="" id="formulario-comprar-pago">
                                 <div class="row">
                                     <div class="col s12">
                                         <button class="col s12 center-align waves-effect waves-light btn"type="submit">Continuar</button>

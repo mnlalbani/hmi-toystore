@@ -50,7 +50,7 @@
                                     include("php/carro-side.php");
                                 ?>
                             </ul>
-                            <form method="POST" action="login.php?buy=true" id="formulario-comprar">
+                            <form method="POST" action="direccion.php" id="formulario-comprar">
                                 <div class="row">
                                     <div class="col s12">
                                         <div class="row">

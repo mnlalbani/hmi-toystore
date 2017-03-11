@@ -36,4 +36,42 @@ view.css('height', 400);
 			}
             })
       })
+
+      //comprar-direcciones
+      $("#formulario-comprar-direcciones").unbind();
+      $("#formulario-comprar-direcciones").on('submit',function(e){
+            e.preventDefault();
+            var direccion = $('input[name=direccionEnvio]:checked').val();
+            var tipoEnvio = $('input[name=tipo-envio]:checked').val();
+            $.post('php/carro-direccion.php',{direccion:direccion,tipoEnvio:tipoEnvio},function(data){
+                  var arr = JSON.parse(data);
+                if(arr.success) { //Si el registro fué completado
+				//alert(arr.respuesta);
+				window.location = "pago.php";
+
+			}
+			else{ //Si ocurrió un error al registrar
+				//alert(arr.respuesta);
+				window.location = "direccion.php";
+			}  
+            })
+      })
+      //comprar-metodo-pago
+      $("#formulario-comprar-pago").unbind();
+      $("#formulario-comprar-pago").on('submit',function(e){
+            e.preventDefault();
+            var pago = $('input[name=pago]:checked').val();
+            $.post('php/carro-pago.php',{pago:pago},function(data){
+                  var arr = JSON.parse(data);
+                if(arr.success) { //Si el registro fué completado
+				//alert(arr.respuesta);
+				window.location = "checkout.php";
+
+			}
+			else{ //Si ocurrió un error al registrar
+				//alert(arr.respuesta);
+				window.location = "pago.php";
+			}  
+            })
+      })
 });

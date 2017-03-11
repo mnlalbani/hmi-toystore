@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,17 +59,27 @@
                                         <td>
                                             <h6>Dirección</h6>
                                             <blockquote cite="">
-                                               <span class="flow-text">DIRECCION</span>
+                                               <span class="flow-text">
+                                                    <?php
+                                                        $pago = $_SESSION['carro-direccion'];
+                                                        echo $pago[0]['direccion'];
+                                                     ?>
+                                                </span>
                                                <br>
-                                               <a href="#">Cambiar...</a>
+                                               <a href="direccion.php">Cambiar...</a>
                                             </blockquote>
                                         </td>
                                         <td>
-                                            <h6>Método de Pago</h6>
+                                            <h6>Número de Tarjeta</h6>
                                             <blockquote cite="">
-                                               <span class="flow-text">PAGO</span>
+                                                <span class="flow-text">···
+                                                    <?php
+                                                        $pago = $_SESSION['carro-pago'];
+                                                        echo $pago[0]['pago'];
+                                                     ?>
+                                                </span>
                                                <br>
-                                               <a href="#">Cambiar...</a>
+                                               <a href="pago.php">Cambiar...</a>
                                             </blockquote>
                                         </td>
                                     </tr>
@@ -85,96 +98,9 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                           <div class="card horizontal hoverable">
-                                                <div class="card-image">
-                                                    <img src="http://lorempixel.com/100/190/nature/6">
-                                                </div>
-                                                <div class="card-stacked">
-                                                    <div class="card-content">
-                                                    <p class="truncate">Titulo del producor</p>
-                                                    <p>Precio por unidad</p>
-                                                    <p>Cantidad</p>
-                                                    </div>
-                                                    <div class="card-action">
-                                                    <a href="producto.php">Nombre de Produco y Enlace</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                           <div class="card horizontal hoverable">
-                                                <div class="card-image">
-                                                    <img src="http://lorempixel.com/100/190/nature/6">
-                                                </div>
-                                                <div class="card-stacked">
-                                                    <div class="card-content">
-                                                    <p class="truncate">Titulo del producor</p>
-                                                    <p>Precio por unidad</p>
-                                                    <p>Cantidad</p>
-                                                    </div>
-                                                    <div class="card-action">
-                                                    <a href="producto.php">Nombre de Produco y Enlace</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                           <div class="card horizontal hoverable">
-                                                <div class="card-image">
-                                                    <img src="http://lorempixel.com/100/190/nature/6">
-                                                </div>
-                                                <div class="card-stacked">
-                                                    <div class="card-content">
-                                                    <p class="truncate">Titulo del producor</p>
-                                                    <p>Precio por unidad</p>
-                                                    <p>Cantidad</p>
-                                                    </div>
-                                                    <div class="card-action">
-                                                    <a href="producto.php">Nombre de Produco y Enlace</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                           <div class="card horizontal hoverable">
-                                                <div class="card-image">
-                                                    <img src="http://lorempixel.com/100/190/nature/6">
-                                                </div>
-                                                <div class="card-stacked">
-                                                    <div class="card-content">
-                                                    <p class="truncate">Titulo del producor</p>
-                                                    <p>Precio por unidad</p>
-                                                    <p>Cantidad</p>
-                                                    </div>
-                                                    <div class="card-action">
-                                                    <a href="producto.php">Nombre de Produco y Enlace</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                           <div class="card horizontal hoverable">
-                                                <div class="card-image">
-                                                    <img src="http://lorempixel.com/100/190/nature/6">
-                                                </div>
-                                                <div class="card-stacked">
-                                                    <div class="card-content">
-                                                    <p class="truncate">Titulo del producor</p>
-                                                    <p>Precio por unidad</p>
-                                                    <p>Cantidad</p>
-                                                    </div>
-                                                    <div class="card-action">
-                                                    <a href="producto.php">Nombre de Produco y Enlace</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                           <div class="card horizontal hoverable">
-                                                <div class="card-image">
-                                                    <img src="http://lorempixel.com/100/190/nature/6">
-                                                </div>
-                                                <div class="card-stacked">
-                                                    <div class="card-content">
-                                                    <p class="truncate">Titulo del producor</p>
-                                                    <p>Precio por unidad</p>
-                                                    <p>Cantidad</p>
-                                                    </div>
-                                                    <div class="card-action">
-                                                    <a href="producto.php">Nombre de Produco y Enlace</a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                           <?php
+                                            include("php/articulos-checkout.php");
+                                            ?>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -195,23 +121,23 @@
                             <tbody>
                                 <tr>
                                     <td>Producto (s)</td>
-                                    <td><span>TOTAL</span></td>
+                                    <td><span>$ <?php echo $total;?></span></td>
                                 </tr>
                                 <tr>
                                     <td>Envío y manejo</td>
-                                    <td><span>TOTAL</span></td>
+                                    <td><span>$10</span></td>
                                 </tr>
                                 <tr>
-                                    <td>Total entes de impuestos</td>
-                                    <td><span>TOTAL</span></td>
+                                    <td>Total antes de impuestos</td>
+                                    <td><span>$ <?php echo $total+10;?></span></td>
                                 </tr>
                                 <tr>
                                     <td>Impuesto estimado</td>
-                                    <td><span>TOTAL</span></td>
+                                    <td><span>10.00%</span></td>
                                 </tr>
                                 <tr>
-                                    <td>Total</td>
-                                    <td><span>TOTAL</span></td>
+                                    <td>Total a pagar</td>
+                                    <td><span>$ <?php echo ($total+10) + ((10/100)* $total);?></span></td>
                                 </tr>
                             </tbody>
                         </table>

@@ -74,22 +74,22 @@
                         
                         <div class="section"></div>
                         <div class="card-panel">
-                            <form method="POST" action="" id="formulario-comprar">
+                            <form method="POST" action="" id="formulario-comprar-direcciones">
                                 <div class="row">
                                     <div class="col s12">
                                         <blockquote cite="" class="">
                             <h5>Elija un tipo de envío</h5>
                             <ul>
                                 <li>
-                                    <input type="radio" class="with-gap" id="tipo-envio1" name="tipo-envio">
+                                    <input type="radio" class="with-gap" id="tipo-envio1" name="tipo-envio" value="Estandar">
                                     <label for="tipo-envio1">Estándar (3 ~ 5 días)</label>
                                 </li>
                                 <li>
-                                    <input type="radio" class="with-gap" id="tipo-envio2" name="tipo-envio">
+                                    <input type="radio" class="with-gap" id="tipo-envio2" name="tipo-envio" value="DosDias">
                                     <label for="tipo-envio2">Envío de dos días (2 días)</label>
                                 </li>
                                 <li>
-                                    <input type="radio" class="with-gap" id="tipo-envio3" name="tipo-envio">
+                                    <input type="radio" class="with-gap" id="tipo-envio3" name="tipo-envio" value="Express">
                                     <label for="tipo-envio3">Express (1 día)</label>
                                 </li>
                             </ul>

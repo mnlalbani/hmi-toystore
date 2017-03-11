@@ -8,7 +8,7 @@
             echo " <tr> <!-- Fila de tabla pago -->";
             echo "                              <td>";
             echo "                                      <p>";
-            echo "                                          <input class='with-gap' name='group3' type='radio' id='".$i."'  />";
+            echo "                                          <input class='with-gap' name='direccionEnvio' type='radio' id='".$i."' value='".$row['direccionEnvio']."'/>";
             echo "                                          <label for='".$i."'></label>";
             echo "                                      </p>";
             echo "                             </td>";
