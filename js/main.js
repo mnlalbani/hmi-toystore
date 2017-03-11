@@ -74,4 +74,22 @@ view.css('height', 400);
 			}  
             })
       })
+      //checkout
+      $("#formulario-checkout").unbind();
+      $("#formulario-checkout").on('submit',function(e){
+            e.preventDefault();
+            var details = $("#formulario-checkout").serialize();
+            $.post('php/orden.php',details,function(data){
+                  /*var arr = JSON.parse(data);
+                if(arr.success) { //Si el registro fué completado
+				//alert(arr.respuesta);
+				window.location = "index.php";
+
+			}
+			else{ //Si ocurrió un error al registrar
+				//alert(arr.respuesta);
+				window.location = "checkout.php";
+			}  */
+            })
+      })
 });
