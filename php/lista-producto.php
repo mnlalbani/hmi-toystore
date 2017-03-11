@@ -14,7 +14,7 @@
                echo     "<div class='card hoverable'>";
                echo         "<div class='card-image'>";
                echo             "<a href='producto.php'><img src='".$row['img1']."' class='img-responsive'></a>";
-               echo             "<a href='carro.php?producto-id=".$row['id']."' class='hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped' data-position='top' data-delay='50' data-tooltip='Agregar al carrito'><i class='material-icons'>add</i></a>";
+               echo             "<a href='carro.php?new-producto-id=".$row['id']."' class='hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped' data-position='top' data-delay='50' data-tooltip='Agregar al carrito'><i class='material-icons'>add</i></a>";
                echo         "</div>";
                echo         "<div class='card-content'>";
                echo             "<a class='card-title' href='producto.php'>".$row['nombre']."</a>";
@@ -39,7 +39,7 @@
                echo     "<div class='card hoverable'>";
                echo         "<div class='card-image'>";
                echo             "<a href='producto.php'><img src='".$row['img1']."' class='img-responsive'></a>";
-               echo             "<a href='carro.php?producto-id=".$row['id']."'' class='hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped' data-position='top' data-delay='50' data-tooltip='Agregar al carrito'><i class='material-icons'>add</i></a>";
+               echo             "<a href='carro.php?new-producto-id=".$row['id']."'' class='hoverable btn-floating halfway-fab waves-effect waves-light red tooltipped' data-position='top' data-delay='50' data-tooltip='Agregar al carrito'><i class='material-icons'>add</i></a>";
                echo         "</div>";
                echo         "<div class='card-content'>";
                echo             "<a class='card-title' href='producto.php'>".$row['nombre']."</a>";

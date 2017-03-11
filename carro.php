@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,51 +34,10 @@
         <div class="row">
             <div class="col s12 m12 l7">
                 <div class="row"> <!-- fila de productos-->
-                    <div class="col s12 m12 l12">
-                        <div class="card horizontal">
-                            <div class="card-image">
-                                <img src="http://lorempixel.com/100/190/nature/6">
-                            </div>
-                            <div class="card-stacked">
-                                <div class="card-content">
-                                <p>Descripción del Producto</p>
-                                </div>
-                                <div class="card-action">
-                                <a href="producto.php">Nombre de Produco y Enlace</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m12 l12">
-                        <div class="card horizontal">
-                            <div class="card-image">
-                                <img src="http://lorempixel.com/100/190/nature/6">
-                            </div>
-                            <div class="card-stacked">
-                                <div class="card-content">
-                                <p>Descripción del Producto</p>
-                                </div>
-                                <div class="card-action">
-                                <a href="producto.php">Nombre de Produco y Enlace</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m12 l12">
-                        <div class="card horizontal">
-                            <div class="card-image">
-                                <img src="http://lorempixel.com/100/190/nature/6">
-                            </div>
-                            <div class="card-stacked">
-                                <div class="card-content">
-                                <p>Descripción del Producto</p>
-                                </div>
-                                <div class="card-action">
-                                <a href="producto.php">Nombre de Produco y Enlace</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php 
+                        include("php/nuevo-carro.php");
+                        include("php/articulos-carro.php");
+                    ?>
                 </div> <!-- fin fila de productos-->
             </div> <!-- lista de artiuclos -->
             <div class="col s12 m12 l5"><!-- lista de articulos y compra -->
@@ -84,41 +46,34 @@
                         <div class="card-panel">
                             <ul class="collection with-header">
                                 <li class="collection-header"><h4>Artículos</h4></li>
-                                <li class="collection-item avatar">
-                                <i class="material-icons circle">shopping_basket</i>
-                                <span class="title">Nombre Producto</span>
-                                <p> Precio<br>
-                                    Cantidad
-                                </p>
-                                <a href="#!" class="secondary-content"><i class="material-icons">attach_money</i>Total</a>
-                                </li>
-                                <li class="collection-item avatar">
-                                <i class="material-icons circle">shopping_basket</i>
-                                <span class="title">Nombre Produco</span>
-                                <p> Precio<br>
-                                    Cantidad
-                                </p>
-                                <a href="#!" class="secondary-content"><i class="material-icons">attach_money</i>Total</a>
-                                </li>
-                                <li class="collection-item avatar">
-                                <i class="material-icons circle">shopping_basket</i>
-                                <span class="title">Nombre Produco</span>
-                                <p> Precio<br>
-                                    Cantidad
-                                </p>
-                                <a href="#!" class="secondary-content"><i class="material-icons">attach_money</i>Total</a>
-                                </li>
+                                <?php
+                                    include("php/carro-side.php");
+                                ?>
                             </ul>
-                            <form method="POST" action="" id="formulario-comprar">
+                            <form method="POST" action="login.php?buy=true" id="formulario-comprar">
                                 <div class="row">
                                     <div class="col s12">
                                         <div class="row">
                                             <div class="input-field col s12">
                                             <i class="material-icons prefix">attach_money</i>
                                             <input disabled id="icon_telephone" type="tel" class="validate">
-                                            <label for="icon_telephone">Precio Total</label>
+                                            <label class="black-text" for="icon_telephone">
+                                                <?php
+                                                    if(isset($total)){
+                                                        echo $total;
+                                                    }
+                                                ?>
+                                            </label>
                                             </div>
                                         </div>
+                                        <?php 
+                                        if(isset($datos)){
+                                            for($i=0;$i<count($datos);$i++){
+                                                            //<div id="articulo_pago">· <?php echo $datos[$i]['Nombre'];</div><br>
+                                                            echo "<input hidden type='text' class='' name='producto-id".$i."' value='".$datos[$i]['id']."'>";
+                                                        }
+                                        }
+                                            ?>
                                         <button class="col s12 center-align waves-effect waves-light btn"type="submit">Continuar</button>
                                     </div>
                                 </div>
