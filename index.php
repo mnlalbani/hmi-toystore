@@ -45,7 +45,9 @@
         <div class="navbar-fixed"> <!-- Barra de Navegación -->
             <nav class="light-blue lighten-2">
                 <div class="nav-wrapper">
-                    <a href="index.php" class="brand-logo left">Logo</a>
+                    <a href="index.php" class="brand-logo left">
+                        <img src="images/logo/logo.svg" class="responsive-img" alt="" style="width:64px; height:64px">
+                    </a>
                     <ul class="right">
                         <li>
                             <form>
@@ -71,8 +73,9 @@
         </div>
     </header>
     <main class="grey lighten-4">  
+    <div style="margin-bottom:10px"></div>
         <div class="row">
-            <div class="carousel carousel-slider z-depth-1 hide-on-med-and-down" data-indicators="true">
+            <div class="carousel carousel-slider z-depth-1 hide-on-med-and-down" data-indicators="true" style="height:300px">
                     <div class="carousel-item">
                         <a href="#one!"><img src="images/toy-store-1.jpg" class="responsive-img"></a>
                     </div>
@@ -87,9 +90,16 @@
                     </div>
             </div>
         </div>
-        <div class="row">
-            <div class="categoria m11 l11 hide-on-med-and-down">
-                <img src="images/NOA_8879.jpg" class="responsive-img" alt="">
+        <div class="">
+            <div class="row">
+                <div class="col s12 m12 l12 light-blue lighten-2">
+                        <ul class="collection">
+                            <a class="collection-item"></a>
+                        </ul>
+                </div>
+                <div class="categoria col m12 l12 hide-on-med-and-down">
+                    <img src="images/toystore.jpg" class="responsive-img z-depth-1 hoverable" alt="">
+                </div>
             </div>
         </div>
         <div class="row"> 

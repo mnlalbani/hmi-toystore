@@ -85,7 +85,7 @@
                                 <i class="material-icons">attach_money</i>
                                 <span class="precio-producto"><?php echo $_COOKIE['precio'];?></span>
                             </div>
-                            <form method="POST" action="" id="formulario-comprar">
+                            <form method="POST" action=<?php echo "carro.php?new-producto-id=".$_COOKIE['id'].""; ?> id="formulario-comprar-producto">
                                 <div class="row">
                                     <div class="col s12">
                                         <div class="input-field ">

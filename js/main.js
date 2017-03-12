@@ -125,4 +125,6 @@ view.css('height', 400);
                   }
             })
       })
+      //formulario comprar en producto
+      
 });

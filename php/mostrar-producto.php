@@ -4,6 +4,7 @@ if(isset($_GET['id'])){
     $sql = "SELECT * FROM `producto` WHERE `id` = '".$_GET['id']."'"; //Carga todo con esa marca
         $result = $mysqli -> query($sql);
         while($row = mysqli_fetch_array($result)) {
+                $_COOKIE['id'] = $row['id'];
                $_COOKIE['img1'] = $row['img1'];
                $_COOKIE['img2'] = $row['img2'];
                $_COOKIE['img3'] = $row['img3'];
