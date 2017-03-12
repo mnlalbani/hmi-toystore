@@ -86,6 +86,10 @@
             <div class="col s12 m12 l5"><!-- lista de  compra -->
                 <div class="row">
                     <div class="col s12">
+                        <blockquote cite="" class="">
+                            <h5 class="flow-text">Pulse continuar para revisar su orden antes de finalizar.</h5>
+                        </blockquote>
+                        <div class="section"></div>
                         <div class="card-panel">
                             <form method="POST" action="" id="formulario-comprar-pago">
                                 <div class="row">
@@ -95,10 +99,8 @@
                                 </div>
                             </form>
                         </div> <!-- fin card-panel -->
-                        <div class="section"></div>
-                        <blockquote cite="" class="">
-                            <h5 class="flow-text">Puede revisar su orden antes de finalizar.</h5>
-                        </blockquote>
+                        
+                        
                     </div>
                 </div>
             </div>  <!-- fin contenedor lista compra -->

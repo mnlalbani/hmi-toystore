@@ -11,4 +11,9 @@ body {
   main {
     flex: 1 0 auto;
   }
+.social-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
      
