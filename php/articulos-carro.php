@@ -26,7 +26,11 @@
     }
         
     }else{
-        echo '<br><br><br><center><h4>No has añadido ningun producto</h4></center>';
+        echo '<blockquote class="col s12 m12 l12 offset-l3">
+                <span><h5>No has añadido ningún producto aún.</h5></span>
+                <br>
+                <a href="lista.php">Revisa nuestra lista de artículos</a>
+            </blockquote>';
     }
     //echo '<div id="etiqueta">Total: Bs. '.$total.'</div>';
 					
