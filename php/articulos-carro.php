@@ -14,7 +14,7 @@
         echo "</div>";
         echo "<div class='card-stacked'>";
         echo "<div class='card-content'>";
-        echo "<p>Descripción del Producto</p>";
+        echo "<p>".$datos[$i]['descripcion']."</p>";
         echo "</div>";
         echo "<div class='card-action'>";
         echo "<a href='producto.php?id=".$datos[$i]['id']."'>".$datos[$i]['nombre']."</a>";
