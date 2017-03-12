@@ -62,6 +62,7 @@
                     <a href="lista.php?categoria=bebes" class="collection-item">Bebés</a>
                     <a href="lista.php?categoria=exterior" class="collection-item">Exterior</a>
                     <a href="lista.php?categoria=videojuego" class="collection-item">Videojuegos</a>
+                    <a href="lista.php?categoria=mesa" class="collection-item">Juegos de Mesa</a>
                     <li class="collection-header">Marcas</li>
                     <a href="lista.php?marca=fisher-price" class="collection-item">Fisher Price</a>
                     <a href="lista.php?marca=disney" class="collection-item">Disney</a>

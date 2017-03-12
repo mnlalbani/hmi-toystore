@@ -16,4 +16,12 @@ body {
     height: 30px;
     margin-right: 5px;
 }
+.index-category-link{
+  height: 70px;
+}
+     
+.index-category-link:hover{
+  height: 70px;
+  background-color: #29b6f6 !important;
+}
      

@@ -95,17 +95,13 @@
                     </div>
             </div>
         </div>
-        <div class="">
-            <div class="row">
-                <div class="col s12 m12 l12 light-blue lighten-2">
-                        <ul class="collection">
-                            <a class="collection-item"></a>
-                        </ul>
-                </div>
-                <div class="categoria col m12 l12 hide-on-med-and-down">
-                    <img src="images/toystore.jpg" class="responsive-img z-depth-1 hoverable" alt="">
-                </div>
-            </div>
+        <div class="row z-depth-1">
+                <a href="lista.php?categoria=nino" class="valign-wrapper col s6 m6 l2  light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Niños</h5></a>
+                <a href="lista.php?categoria=nina" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Niñas</h5></a>
+                <a href="lista.php?categoria=bebe" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Bebés</h5></a>
+                <a href="lista.php?categoria=exterior" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Exterior</h5></a>
+                <a href="lista.php?categoria=videojuego" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Videojuegos</h5></a>
+                <a href="lista.php?categoria=mesa" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Juegos de Mesa</h5></a>
         </div>
         <div class="row"> 
             <div class="col s12 m12 l6"><!-- destacados -->
