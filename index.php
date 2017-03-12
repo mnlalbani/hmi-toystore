@@ -147,7 +147,7 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2017 José Natera - Christian Ramos - Rosangela Cortesía -Jesús Cordova
+            © 2017 | José Natera - Christian Ramos - Rosangela Cortesía - Jesús Cordova
             <a class="grey-text text-lighten-4 right" href="#!"><img src="images/social/facebook.png" alt="" class="social-icon"></a>
             <a class="grey-text text-lighten-4 right" href="#!"><img src="images/social/twitter.png" alt="" class="social-icon"></a>
             <a class="grey-text text-lighten-4 right" href="#!"><img src="images/social/instagram.png" alt="" class="social-icon"></a>
