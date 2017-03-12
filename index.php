@@ -72,7 +72,7 @@
     </header>
     <main class="grey lighten-4">  
         <div class="row">
-            <div class="carousel carousel-slider z-depth-1" data-indicators="true">
+            <div class="carousel carousel-slider z-depth-1 hide-on-med-and-down" data-indicators="true">
                     <div class="carousel-item">
                         <a href="#one!"><img src="images/toy-store-1.jpg" class="responsive-img"></a>
                     </div>
@@ -88,7 +88,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="categoria m11 l11 hide-on-small-only">
+            <div class="categoria m11 l11 hide-on-med-and-down">
                 <img src="images/NOA_8879.jpg" class="responsive-img" alt="">
             </div>
         </div>

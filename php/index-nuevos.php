@@ -1,7 +1,7 @@
 <?php
 include_once("conexion.php");
 
-$sql = "SELECT * FROM `producto` ORDER BY `id` DESC LIMIT 2"; //Carga todo con esa marca
+$sql = "SELECT * FROM `producto` ORDER BY `id` DESC LIMIT 2"; //Carga ultimos articulos
         $result = $mysqli -> query($sql);
         while($row = mysqli_fetch_array($result)) {
                echo "<div class='col s12 m6 l6'>";
