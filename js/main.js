@@ -17,6 +17,22 @@ view.css('height', 400);
       //Side Nav
       $(".button-collapse").sideNav();
 
+      //validacion de contraseña
+      $('#password').change(function(){
+            if($(this).val().length > 0){
+                  $('#password2').prop('disabled', false);
+            }else{
+                  $('#password2').prop('disabled',true);
+            }
+      });
+      $('#password2').change(function(){
+            if($(this).val() != $('#password').val()){
+                  $("#btn-registrar").prop('disabled',true);
+            }else{
+                  $("#btn-registrar").prop('disabled',false);
+            }
+      });
+
       //registrar usuario
       $("#registrarUsuario").unbind();
       $('#registrarUsuario').on('submit',function(e){

@@ -69,8 +69,8 @@
                     <div class='row'>
                         <div class='input-field col s12'>
                             <i class="material-icons prefix">lock</i>
-                            <label for='password2' class="left-align">Repite tu contraseña</label>
-                            <input class='validate' type='password' name='password2' id='password2' required disabled>
+                            <label for='password2' class="left-align" id="labelpass" data-error="Contraseña no coincide">Repite tu contraseña</label>
+                            <input class='validate' type='password' name='password2' id='password2'  required disabled>
                         </div>
                         <label style='float: right;'  class="hidden">
                             <a class='pink-text' href='#!'><b>Olvidó su contraseña?</b></a>
@@ -79,7 +79,7 @@
                     <br />
                     <center>
                     <div class='row'>
-                        <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Registrar</button>
+                        <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo' id="btn-registrar">Registrar</button>
                     </div>
                     </center>
                 </form>
