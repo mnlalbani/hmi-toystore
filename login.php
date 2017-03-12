@@ -98,20 +98,20 @@
             <div class="section"></div> <!-- Separador -->
                 </div>
         </main>
-    <footer class="page-footer"> <!-- Footer -->
+    <footer class="page-footer light-blue lighten-2"> <!-- Footer -->
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Tienda de Juguetes</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <h5 class="white-text">El Rincón Del Juego</h5>
+                <p class="grey-text text-lighten-4">Más Juguetes, Más Diversión</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="white-text">Enlaces</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Tu Cuenta</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Tus Ordenes</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Escríbenos</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Ayuda</a></li>
                 </ul>
               </div>
             </div>
@@ -119,9 +119,10 @@
           <div class="footer-copyright">
             <div class="container">
             © 2017 José Natera - Christian Ramos - Rosangela Cortesía -Jesús Cordova
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <a class="grey-text text-lighten-4 right" href="#!"><img src="images/social/facebook.png" alt="" class="social-icon"></a>
+            <a class="grey-text text-lighten-4 right" href="#!"><img src="images/social/twitter.png" alt="" class="social-icon"></a>
+            <a class="grey-text text-lighten-4 right" href="#!"><img src="images/social/instagram.png" alt="" class="social-icon"></a>
+            <a class="grey-text text-lighten-4 right" href="#!"><img src="images/social/google.png" alt="" class="social-icon"></a>
             </div>
           </div>
     </footer>
