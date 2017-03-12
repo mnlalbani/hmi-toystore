@@ -50,7 +50,7 @@
                                     include("php/carro-side.php");
                                 ?>
                             </ul>
-                            <form method="POST" action="direccion.php" id="formulario-comprar">
+                            <form method="POST" action="" id="formulario-comprar-carro">
                                 <div class="row">
                                     <div class="col s12">
                                         <div class="row">
@@ -74,7 +74,7 @@
                                                         }
                                         }
                                             ?>
-                                        <button class="col s12 center-align waves-effect waves-light btn"type="submit">Continuar</button>
+                                        <button <?php //if(!isset($_SESSION['usuarioid'])){ echo "disabled"; } ?> class="col s12 center-align waves-effect waves-light btn"type="submit">Continuar</button>
                                     </div>
                                 </div>
                             </form>

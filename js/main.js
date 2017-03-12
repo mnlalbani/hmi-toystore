@@ -92,4 +92,21 @@ view.css('height', 400);
 			}  */
             })
       })
+      //formulario carro , redirect on sesssion check
+      $("#formulario-comprar-carro").unbind();
+      $("#formulario-comprar-carro").on('submit',function(e){
+            e.preventDefault();
+            //var details = $("#formulario-comprar-carro").serialize();
+            $.post('php/session-check-carro.php',function(data){
+                  var response = JSON.parse(data);
+
+                  if(response.success){
+                        console.log("session iniciada");
+                        window.location.href = "direccion.php";
+                  }else{
+                        console.log("sesion no iniciada");
+                        window.location.href = "login.php";
+                  }
+            })
+      })
 });
