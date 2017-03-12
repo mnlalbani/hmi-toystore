@@ -105,7 +105,7 @@ view.css('height', 400);
                         window.location.href = "direccion.php";
                   }else{
                         console.log("sesion no iniciada");
-                        window.location.href = "login.php";
+                        window.location.href = "login.php?shop=true";
                   }
             })
       })

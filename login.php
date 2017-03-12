@@ -44,9 +44,9 @@
         <div class="row">
             <div class="section">
             </div>
-            <div class="col s12 m6 offset-m3 l6 offset-l3">
-                <ul class="tabs grey lighten-5">
-                    <div class="row">
+            <div class="col s12 m6 offset-m3 l6 offset-l3" <?php if(!isset($_GET['shop'])){ echo "hidden";} ?>> <!-- oculta si la sesion no esta iniciada y no se viene desde el carro de compras -->
+                <ul class="tabs grey lighten-5" > 
+                    <div class="row" >
                         <li class="tab col s3 disabled" ><a class="active" href="#test1">Login</a></li>
                         <li class="tab col s3 disabled" ><a href="#test2">Dirección</a></li>
                         <li class="tab col s3 disabled" ><a  href="#test3">Pago</a></li>
