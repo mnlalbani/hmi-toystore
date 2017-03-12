@@ -49,28 +49,28 @@
                         <div class='input-field col s12'>
                             <i class="material-icons prefix">person</i>
                             <label for='nombre' class="left-align">Ingresa tu nombre</label>
-                            <input class='validate' type='text' name='nombre' id='nombre'>
+                            <input class='validate' type='text' name='nombre' id='nombre' required>
                         </div>
                     </div>
                     <div class='row'>
                         <div class='input-field col s12'>
                             <i class="material-icons prefix">email</i>
                             <label for='email' class="left-align">Ingresa tu correo</label>
-                            <input class='validate' type='email' name='email' id='email'>
+                            <input class='validate' type='email' name='email' id='email' required>
                         </div>
                     </div>
                     <div class='row'>
                         <div class='input-field col s12'>
                             <i class="material-icons prefix">lock</i>
                             <label for='password' class="left-align">Ingresa tu contraseña</label>
-                            <input class='validate' type='password' name='password' id='password'>
+                            <input class='validate' type='password' name='password' id='password' required>
                         </div>
                     </div>
                     <div class='row'>
                         <div class='input-field col s12'>
                             <i class="material-icons prefix">lock</i>
                             <label for='password2' class="left-align">Repite tu contraseña</label>
-                            <input class='validate' type='password' name='password2' id='password2'>
+                            <input class='validate' type='password' name='password2' id='password2' required disabled>
                         </div>
                         <label style='float: right;'  class="hidden">
                             <a class='pink-text' href='#!'><b>Olvidó su contraseña?</b></a>

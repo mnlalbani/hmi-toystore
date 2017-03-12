@@ -71,7 +71,7 @@
                     <div class='input-field col s12'>
                         <i class="material-icons prefix">email</i>
                         <label for='email' class="left-align">Ingresa tu correo</label>
-                        <input class='validate' type='email' name='email' id='email'>
+                        <input class='validate' type='email' name='email' id='email' required>
                     </div>
                     </div>
 
@@ -79,7 +79,7 @@
                     <div class='input-field col s12'>
                         <i class="material-icons prefix">lock</i>
                         <label for='password' class="left-align">Ingresa tu contraseña</label>
-                        <input class='validate' type='password' name='password' id='password'>
+                        <input class='validate' type='password' name='password' id='password' required>
                     </div>
                     <label style='float: right;'>
                         <a class='pink-text hidden' href='#!'><b>Olvidó su contraseña?</b></a>
