@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 13, 2017 at 03:47 AM
+-- Generation Time: Mar 13, 2017 at 10:49 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -32,7 +32,7 @@ CREATE TABLE `direcciones` (
   `usuarioid` int(11) DEFAULT NULL,
   `direccionEnvio` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
   `id` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `direcciones`
@@ -51,9 +51,9 @@ INSERT INTO `direcciones` (`usuarioid`, `direccionEnvio`, `id`) VALUES
 CREATE TABLE `metodos_pago` (
   `id` int(11) NOT NULL,
   `usuarioid` int(11) DEFAULT NULL,
-  `metodo` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `metodo` varchar(50) COLLATE utf8_unicode_ci DEFAULT 'VISA',
   `termina` int(11) DEFAULT NULL,
-  `expira` varchar(11) COLLATE utf8_unicode_ci DEFAULT NULL
+  `expira` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -78,13 +78,6 @@ CREATE TABLE `orden` (
   `ventaid` int(11) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- Dumping data for table `orden`
---
-
-INSERT INTO `orden` (`id`, `usuarioid`, `articuloid`, `articulocantidad`, `fechaOrden`, `ventaid`) VALUES
-(5, 4, 1, 1, NULL, 12);
-
 -- --------------------------------------------------------
 
 --
@@ -104,15 +97,16 @@ CREATE TABLE `producto` (
   `img3` text COLLATE utf8_unicode_ci NOT NULL,
   `img4` text COLLATE utf8_unicode_ci NOT NULL,
   `img5` text COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `producto`
 --
 
 INSERT INTO `producto` (`id`, `nombre`, `descripcion`, `precio`, `cantidad`, `categoria`, `marca`, `img1`, `img2`, `img3`, `img4`, `img5`) VALUES
-(1, 'Nintendo Switch', 'Nueva Consola de Nintendo', 299, 10, 'videojuego', 'nintendo', 'images/producto/switch1.jpg', 'images/producto/switch2.jpg', 'images/producto/switch3.jpg', 'images/producto/switch4.jpg', 'images/producto/switch5.jpg'),
-(2, 'Capitan America', 'Figura de accion del capitan america', 20, 10, 'nino', 'marvel', '', '', '', '', '');
+(1, 'Nintendo Switch', 'Nueva Consola de Nintendo.', 299, 10, 'videojuego', 'nintendo', 'images/producto/switch1.jpg', 'images/producto/switch2.jpg', 'images/producto/switch3.jpg', 'images/producto/switch4.jpg', 'images/producto/switch5.jpg'),
+(2, 'Capitan America', 'Figura de accion del Capitan America CIVIL WAR.', 20, 10, 'nino', 'marvel', 'images/producto/ca3.jpg', 'images/producto/ca1.jpg', 'images/producto/ca2.jpg', 'images/producto/ca4.jpg', ''),
+(3, 'Army Men', 'Soldados verdes de plastico listos para la batalla.', 1, 200, 'nino', 'Dinky', 'images/producto/gam1.jpg', 'images/producto/gam2.jpg', 'images/producto/gam3.jpg', 'images/producto/gam4.jpg', 'images/producto/gam5.jpg');
 
 -- --------------------------------------------------------
 
@@ -174,13 +168,6 @@ CREATE TABLE `venta` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `venta`
---
-
-INSERT INTO `venta` (`id`, `preciototal`, `direccionEnvio`, `metodoPago`, `usuarioid`) VALUES
-(12, '338.9', 'Zoom Cumana plaza, Cumana, Estado sucre', '789', 4);
-
---
 -- Indexes for dumped tables
 --
 
@@ -231,35 +218,40 @@ ALTER TABLE `venta`
 --
 
 --
+-- AUTO_INCREMENT for table `direcciones`
+--
+ALTER TABLE `direcciones`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
 -- AUTO_INCREMENT for table `metodos_pago`
 --
 ALTER TABLE `metodos_pago`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `orden`
 --
 ALTER TABLE `orden`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `sesion`
 --
 ALTER TABLE `sesion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `venta`
 --
 ALTER TABLE `venta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
