@@ -11,6 +11,9 @@ else {
 view.css('height', 400);
 }
 });
+      //slider
+      $('.slider').slider();
+      //carousel
        $('.carousel.carousel-slider').carousel({fullWidth: true});
       //Select
       $('select').material_select();
