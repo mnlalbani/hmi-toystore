@@ -36,7 +36,7 @@
                     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
                     <a href="index.php" class="brand-logo">Logo</a>
                     <ul class="right">
-                        <li><a href="#"><i class="material-icons left">search</i></a></li>
+                        <li><a href="lista.php"><i class="material-icons left">search</i></a></li>
                         <?php
                             if(isset($_SESSION['correo'])){
                             echo "<li><a href='perfil.php'><i class='material-icons left tooltipped' data-position='bottom' data-delay='50' data-tooltip='Perfil'>account_circle</i><span class='hide-on-med-and-down'>Perfil</span></a></li>";
