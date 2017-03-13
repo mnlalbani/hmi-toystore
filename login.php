@@ -56,7 +56,15 @@
         </div>
          <div class="container center-align">
             <div class="section"></div>
-            <h5 class="indigo-text">Por favor, ingrese a su cuenta</h5>
+            <?php 
+                if(isset($_GET['error'])){
+                    echo "<h5 class='red-text'>Usuario no Registrado</h5>";
+                    echo "<a href='registro.php'>¿No posee cuenta aún?</a>";
+                }else{
+                    echo "<h5 class='indigo-text'>Por favor, ingrese a su cuenta</h5>";
+                }
+            
+            ?>
             <div class="section"></div>
             <div class="container">
                 <div class="z-depth-1 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">

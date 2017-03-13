@@ -28,6 +28,7 @@
     else{
         $data['success'] = false;
         $data['error'] = "Usuario no registrado";
+        header("location: ../login.php?error=true");
         echo json_encode($data);
     }
   }

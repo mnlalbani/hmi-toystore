@@ -1,5 +1,4 @@
 <?php
-var_dump($_POST);
 	include_once ("conexion.php");
 	if(isset($_SESSION['carrito'])){ //si la sesion del carro esta definida
 		if(isset($_GET['new-producto-id'])){
@@ -59,12 +58,18 @@ var_dump($_POST);
 				$descripcion=$f['descripcion'];
 				$imagen=$f['img1'];
 			}
+			$aux = 0;
+			if(isset($_POST['cantidad'])){
+				$aux = $_POST['cantidad'];
+			}else{
+				$aux = 1;
+			}
 			$arreglo[]=array('id'=>$_GET['new-producto-id'],
 										'nombre'=>$nombre,
 										'precio'=>$precio,
                                         'descripcion'=>$descripcion,
 										'img1'=>$imagen,
-										'cantidad'=>1);
+										'cantidad'=>$aux);
 			$_SESSION['carrito']=$arreglo;
 		}
 	}
