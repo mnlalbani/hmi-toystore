@@ -73,7 +73,7 @@
                                </tbody>
                            </table>
                            <br>
-                           <a href="direcciones-perfil.php" class="">Agregar otra dirección</a>
+                           <a href="direcciones-perfil.php?redirect=true" class="">Agregar otra dirección</a>
                         </div> <!-- fin card-panel -->
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                             <h5>Elija un tipo de envío</h5>
                             <ul>
                                 <li>
-                                    <input type="radio" class="with-gap" id="tipo-envio1" name="tipo-envio" value="Estandar">
+                                    <input type="radio" class="with-gap" id="tipo-envio1" name="tipo-envio" value="Estandar" checked>
                                     <label for="tipo-envio1">Estándar (3 ~ 5 días)</label>
                                 </li>
                                 <li>

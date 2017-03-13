@@ -1,8 +1,7 @@
 <?php
     session_start();
     include("conexion.php");
-    var_dump($_POST);
-
+    //var_dump($_POST);
     $userid = $_SESSION['usuarioid'];
 
     $sqlinsertadireccion= "INSERT INTO `direcciones` (usuarioid,direccionEnvio)
@@ -11,7 +10,12 @@
 
     $insertadireccionnueva = $mysqli->query($sqlinsertadireccion);
     //echo $sqlinsertadireccion;
-    header("location: ../direcciones-perfil.php");
+    if(isset($_GET['carrito'])){
+        header("location: ../direccion.php");
+    }else{
+        header("location: ../direcciones-perfil.php");
+    }
+    
 
     $mysqli->close();
 

@@ -78,7 +78,7 @@
                                </tbody>
                            </table>
                            <br>
-                           <a href="#" class="">Agregar otro Método</a>
+                           <a href="pago-perfil.php?redirect=true" class="">Agregar otro Método</a>
                         </div> <!-- fin card-panel -->
                     </div>
                 </div>

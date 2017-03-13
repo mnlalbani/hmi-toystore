@@ -100,7 +100,12 @@
                                     <div class="collapsible-header"><i class="material-icons">add</i>Agrega Otra Dirección</div>
                                     <div class="collapsible-body">
                                         <div class="row">
-                                            <form class="col s12" method="POST" action="php/agrega-direccion.php" id="formulario-agregar-direccion">
+                                            <?php if(isset($_GET['redirect'])){
+                                               echo "<form class='col s12' method='POST' action='php/agrega-direccion.php?carrito=true' id='formulario-agregar-direccion'>";
+                                            }else{
+                                                echo "<form class='col s12' method='POST' action='php/agrega-direccion.php' id='formulario-agregar-direccion'>";
+                                            }
+                                            ?>
                                             <div class="row">
                                                 <div class="row">
                                                     <form class="col s12">

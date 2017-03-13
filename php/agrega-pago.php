@@ -13,7 +13,13 @@
 
     $insertpagonuevo = $mysqli->query($sqlinsertapago);
     //echo $sqlinsertapago;
-    header("location: ../pago-perfil.php");
+
+    if(isset($_GET['carrito'])){
+        header("location: ../pago.php");
+    }else{
+        header("location: ../pago-perfil.php");
+    }
+    
 
     $mysqli->close();
 

@@ -45,7 +45,7 @@
                             echo "<li><a href='login.php'><i class='material-icons left tooltipped' data-position='bottom' data-delay='50' data-tooltip='Ingresa'>account_circle</i><span class='hide-on-med-and-down'>Ingresa</span></a></li>";    
                             }
                         ?>
-                        <li><a href="carro.php"><i class="material-icons left">shopping_cart</i></a></li>
+                        <li><a href="carro.php"><i class="material-icons left tooltipped' data-position='bottom' data-delay='50' data-tooltip='Carro'">shopping_cart</i>Carro</a></li>
                     </ul>
                 </div>
             </nav>

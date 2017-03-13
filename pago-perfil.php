@@ -109,7 +109,12 @@
                                     <div class="collapsible-header"><i class="material-icons">add</i>Agrega Otra Tarjeta</div>
                                     <div class="collapsible-body">
                                         <div class="row">
-                                            <form class="col s12" method="POST" action="php/agrega-pago.php" id="formulario-agregar-pago">
+                                            <?php if(isset($_GET['redirect'])){
+                                               echo "<form class='col s12' method='POST' action='php/agrega-pago.php?carrito=true' id='formulario-agregar-pago'>";
+                                            }else{
+                                                echo "<form class='col s12' method='POST' action='php/agrega-pago.php' id='formulario-agregar-pago'>";
+                                            }
+                                            ?>
                                             <div class="row valign-wrapper">
                                                 <div class="input-field col s5">
                                                 <i class="material-icons prefix">credit_card</i>
