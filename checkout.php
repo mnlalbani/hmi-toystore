@@ -156,6 +156,7 @@
                         <form action="" id="formulario-checkout" method="POST">
                             <div class="row">
                                 <div class="col s12 m12 l12">
+                                    <input type="text" hidden name="vaciar" value="true">
                                     <?php $sum = ($total+10) + ((10/100)* $total); ?>
                                     <input hidden type="text" name="preciototal" value='<?php echo $sum; ?>'>
                                     <input hidden type="text" name="direccion" value='<?php echo $direccion[0]['direccion']; ?>'>

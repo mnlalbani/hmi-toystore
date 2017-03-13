@@ -1,6 +1,6 @@
 <?php
     include_once("conexion.php");
-    var_dump($_POST);
+    //var_dump($_POST);
     $sqlventa = "INSERT INTO `venta` (preciototal,direccionEnvio,metodoPago,usuarioid) 
         VALUES('{$mysqli->real_escape_string($_POST['preciototal'])}',
             '{$mysqli->real_escape_string($_POST['direccion'])}',
@@ -24,5 +24,10 @@
             VALUES('{$mysqli->real_escape_string($_POST['usuarioid'])}','".$articulos[$cont]."','".$cantidad[$cont]."','".$idventa."')";
         $insertorden = $mysqli->query($sqlorden);
         $cont++;
+
+    }
+    
+    if(isset($_POST['vaciar'])){
+        unset($_SESSION['carrito']);
     }
 ?>

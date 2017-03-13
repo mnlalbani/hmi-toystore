@@ -51,7 +51,7 @@
             <nav class="light-blue lighten-2">
                 <div class="nav-wrapper">
                     <a href="index.php" class="brand-logo left">
-                        <img src="images/logo/logo.svg" class="responsive-img" alt="" style="width:64px; height:64px">
+                        <img src="images/logo/logo.png" class="logo-img" alt="">
                     </a>
                     <ul class="right">
                         <li>
