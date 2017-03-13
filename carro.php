@@ -1,6 +1,9 @@
 <?php 
     session_start();
     //var_dump($_SESSION['carrito']);
+    if(isset($_GET['vaciar'])){
+        unset($_SESSION['carrito']);
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -86,7 +89,10 @@
                                     </div>
                                 </div>
                             </form>
+                            <div class="section"></div>
+                            
                         </div> <!-- fin card-panel -->
+                        <a class="col offset-s4"href="carro.php?vaciar=true">Vaciar el Carro de Compras</a>
                     </div>
                 </div>
             </div>  <!-- fin contenedor lista compra -->

@@ -1,4 +1,5 @@
 <?php
+var_dump($_POST);
 	include_once ("conexion.php");
 	if(isset($_SESSION['carrito'])){ //si la sesion del carro esta definida
 		if(isset($_GET['new-producto-id'])){
@@ -13,8 +14,13 @@
 						}
 					}
 					if($encontro==true){
-						$arreglo[$numero]['cantidad']=$arreglo[$numero]['cantidad']+1; //suma uno si encontro el id en el carro
-						$_SESSION['carrito']=$arreglo;
+						if(isset($_POST['cantidad'])){
+							$arreglo[$numero]['cantidad'] = $_POST['cantidad'];
+							$_SESSION['carrito']=$arreglo;	
+						}else{
+							$arreglo[$numero]['cantidad']=$arreglo[$numero]['cantidad']+1; //suma uno si encontro el id en el carro
+							$_SESSION['carrito']=$arreglo;
+						}
 					}else{
 						$nombre=""; 
 						$precio=0;
