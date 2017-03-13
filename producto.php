@@ -60,16 +60,16 @@
                 <div class="section"></div>
                 <div class="row hide-on-med-and-down"> <!-- contenedor imagenes secundarias -->
                     <div class="col s3 m3 l3">
-                            <img src="<?php echo $_COOKIE['img1']?>" alt="" class="responsive-img z-depth-2">
+                            <img src="<?php echo $_COOKIE['img1']?>" alt="" class="responsive-img z-depth-2 materialboxed">
                     </div>
                     <div class="col s3 m3 l3">
-                            <img src="<?php echo $_COOKIE['img2'];?>" alt="" class="responsive-img z-depth-2">
+                            <img src="<?php echo $_COOKIE['img2'];?>" alt="" class="responsive-img z-depth-2 materialboxed">
                     </div>
                     <div class="col s3 m3 l3">
-                            <img src="<?php echo $_COOKIE['img3'];?>" alt="" class="responsive-img z-depth-2">
+                            <img src="<?php echo $_COOKIE['img3'];?>" alt="" class="responsive-img z-depth-2 materialboxed">
                     </div>
                     <div class="col s3 m3 l3">
-                            <img src="<?php echo $_COOKIE['img4'];?>" alt="" class="responsive-img z-depth-2">
+                            <img src="<?php echo $_COOKIE['img4'];?>" alt="" class="responsive-img z-depth-2 materialboxed">
                     </div>
                 </div>
             </div> <!-- fin contenedor slider -->
