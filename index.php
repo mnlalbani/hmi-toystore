@@ -102,6 +102,25 @@
                 <a href="lista.php?categoria=exterior" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Exterior</h5></a>
                 <a href="lista.php?categoria=videojuego" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Videojuegos</h5></a>
                 <a href="lista.php?categoria=mesa" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Juegos de Mesa</h5></a>
+                
+                <div class="col l12 hide-on-med-and-down">
+                    <img src="images/categoria.jpg" width="1300" height="480" border="0" class="" alt="" usemap="#map" >
+                    <!--<img src="categoria.xcf" width="1300" height="480" border="0" />-->
+
+                    <map name="map">
+                        <!-- #$-:Image map file created by GIMP Image Map plug-in -->
+                        <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+                        <!-- #$-:Please do not edit lines starting with "#$" -->
+                        <!-- #$VERSION:2.3 -->
+                        <!-- #$AUTHOR:Albani -->
+                        <area shape="rect" coords="287,50,465,223" alt="videojuego" target="videojuego" href="videojuego" />
+                        <area shape="rect" coords="691,140,813,342" alt="bebe" target="bebe" href="bebe" />
+                        <area shape="rect" coords="59,232,349,475" alt="exterior" target="exterior" href="exterior" />
+                        <area shape="rect" coords="358,343,577,460" alt="mesa" target="mesa" href="mesa" />
+                        <area shape="rect" coords="1054,224,1342,458" alt="nina" target="nina" href="nina" />
+                        <area shape="rect" coords="824,222,1036,460" alt="nino" target="nino" href="nino" />
+                    </map>
+                </div>
         </div>
         <div class="row"> 
             <div class="col s12 m12 l6"><!-- destacados -->

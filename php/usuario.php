@@ -24,8 +24,14 @@
                 $data['respuesta'] = "Ocurrio un error al registrar datos  del usuario";
                 $data['sql'] = $sqlusuario;
                 echo json_encode($data);
-            }else{ //Si el registro fue exitoso se registra el horario
-                $sqlSesion = "INSERT INTO `sesion` (email,password) VALUES('{$mysqli->real_escape_string($_POST['email'])}','{$mysqli->real_escape_string($_POST['password'])}')";
+            }else{ //Si el registro fue exitoso se registra la sesion
+                $sqlidusuario = "SELECT `id` FROM `usuario` ORDER BY `id` DESC LIMIT 1";
+                $resultidusuario = $mysqli-> query($sqlidusuario);
+                $idusuario = 0;
+                while($fila = mysqli_fetch_array($resultidusuario)) {
+                    $idusuario = $fila['id'];
+                }
+                $sqlSesion = "INSERT INTO `sesion` (usuarioid,email,password) VALUES('{$mysqli->real_escape_string($idusuario)}','{$mysqli->real_escape_string($_POST['email'])}','{$mysqli->real_escape_string($_POST['password'])}')";
                     $insertSesion = $mysqli ->query($sqlSesion);
                     if(!$insertSesion){
                         $data['success'] = false;
