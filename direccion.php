@@ -73,7 +73,7 @@
                                </tbody>
                            </table>
                            <br>
-                           <a href="#" class="">Agregar otra dirección</a>
+                           <a href="direcciones-perfil.php" class="">Agregar otra dirección</a>
                         </div> <!-- fin card-panel -->
                     </div>
                 </div>

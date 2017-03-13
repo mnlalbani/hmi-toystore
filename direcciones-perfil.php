@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     
-    <title>Métodos de Pago</title>
+    <title>Dirección de Envío</title>
     <style>
         .profile-option-icon{
             width: 100px;
@@ -83,45 +83,36 @@
                            <table class="table-responsive bordered highlight">
                                <thead>
                                    <tr>
-                                       <h5 class="flow-text">Tus Tarjetas de Crédito</h5>
-                                   </tr>
-                                   <tr>
-                                       <td>Nombre</td>
-                                       <td>Termina en</td>
-                                       <td>Expira en</td>
+                                       <h5 class="flow-text">Tus Direcciones de Envío</h5>
                                    </tr>
                                 </tr>  
                                </thead>
                                <tbody>
                                    
                                        <?php
-                                            include("php/lista-pago.php");
+                                            include("php/lista-direcciones.php");
                                         ?>
-                                    <script>
-                                        $('input[type="radio"]').attr('hidden');
-                                    </script>
-                                    
                                </tbody>
                             </table>
                            <br>
-                            <ul class="collapsible" data-collapsible="accordion">
+                            <ul class="collapsible hoverable" data-collapsible="accordion">
                                 <li>
-                                    <div class="collapsible-header"><i class="material-icons">add</i>Agrega Otra Tarjeta</div>
+                                    <div class="collapsible-header"><i class="material-icons">add</i>Agrega Otra Dirección</div>
                                     <div class="collapsible-body">
                                         <div class="row">
-                                            <form class="col s12" method="POST" action="php/agrega-pago.php" id="formulario-agregar-pago">
-                                            <div class="row valign-wrapper">
-                                                <div class="input-field col s5">
-                                                <i class="material-icons prefix">credit_card</i>
-                                                <input id="numero" type="text" class="validate" name="numero" required>
-                                                <label for="numero">Numero de Tarjeta</label>
+                                            <form class="col s12" method="POST" action="php/agrega-direccion.php" id="formulario-agregar-direccion">
+                                            <div class="row">
+                                                <div class="row">
+                                                    <form class="col s12">
+                                                    <div class="row">
+                                                        <div class="input-field col s12">
+                                                        <textarea id="textarea1" class="materialize-textarea" name="direccionEnvio"></textarea>
+                                                        <label for="textarea1">Textarea</label>
+                                                        </div>
+                                                    </div>
+                                                    </form>
                                                 </div>
-                                                <div class="input-field col s5">
-                                                <i class="material-icons prefix">date_range</i>
-                                                <input id="expira"type="date" class="datepicker" name="expira" required>
-                                                <label for="expira">Fecha de Expiración</label>
-                                                </div>
-                                                <button class="valign btn waves-effect waves-light col s2" type="submit">Agregar
+                                                <button class="btn waves-effect waves-light col s2" type="submit">Agregar
                                                     <i class="material-icons right">add</i>
                                                 </button>
                                             </div>
