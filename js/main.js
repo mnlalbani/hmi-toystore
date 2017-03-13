@@ -16,7 +16,13 @@ view.css('height', 400);
       $('select').material_select();
       //Side Nav
       $(".button-collapse").sideNav();
-
+      //collapsible
+      $('.collapsible').collapsible();
+      //init datepicker
+      $('.datepicker').pickadate({
+            selectMonths: true,
+            selectYears: 15
+      });
       //validacion de contraseña
       $('#password').change(function(){
             if($(this).val().length > 0){

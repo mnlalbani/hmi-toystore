@@ -79,53 +79,61 @@
             <div class="col s12 m12 l7 left"> <!--lista de opciones -->
                 <div class="row">
                     <div class="col s12">
-                        <div class="card horizontal">
-                            <div class="card-image">
-                                <img src="images/profile/bag.png" class="profile-option-icon">
-                            </div>
-                            <div class="card-stacked">
-                                <div class="card-content">
-                                <h5 class="flow-text">Ordenes</h5>
-                                </div>
-                                <div class="card-action">
-                                <a href="orden-perfil.php">Revisa Tus Ordenes</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12">
-                        <div class="card horizontal">
-                            <div class="card-image">
-                                <img src="images/profile/direccion.png" class="profile-option-icon">
-                            </div>
-                            <div class="card-stacked">
-                                <div class="card-content">
-                                <h5 class="flow-text">Direcciones de Envío</h5>
-                                </div>
-                                <div class="card-action">
-                                <a href="direcciones-perfil.php">Gestiona Tus Direcciones de Envío</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12">
-                        <div class="card horizontal">
-                            <div class="card-image">
-                                <img src="images/profile/wallet.png" class="profile-option-icon">
-                            </div>
-                            <div class="card-stacked">
-                                <div class="card-content">
-                                <h5 class="flow-text">Métodos de Pago</h5>
-                                </div>
-                                <div class="card-action">
-                                <a href="pago-perfil.php">Gestiona Tus Métodos de Pago</a>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="card-panel">
+                           <table class="table-responsive bordered highlight">
+                               <thead>
+                                   <tr>
+                                       <h5 class="flow-text">Tus Tarjetas de Crédito</h5>
+                                   </tr>
+                                   <tr>
+                                       <td>Nombre</td>
+                                       <td>Termina en</td>
+                                       <td>Expira en</td>
+                                   </tr>
+                                </tr>  
+                               </thead>
+                               <tbody>
+                                   
+                                       <?php
+                                            include("php/lista-pago.php");
+                                        ?>
+                                    <script>
+                                        $('input[type="radio"]').attr('hidden');
+                                    </script>
+                                    
+                               </tbody>
+                            </table>
+                           <br>
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">add</i>Agrega Otra Tarjeta</div>
+                                    <div class="collapsible-body">
+                                        <div class="row">
+                                            <form class="col s12" method="POST" action="php/agrega-pago.php" id="formulario-agregar-pago">
+                                            <div class="row valign-wrapper">
+                                                <div class="input-field col s5">
+                                                <i class="material-icons prefix">credit_card</i>
+                                                <input id="numero" type="text" class="validate" name="numero" required>
+                                                <label for="numero">Numero de Tarjeta</label>
+                                                </div>
+                                                <div class="input-field col s5">
+                                                <i class="material-icons prefix">date_range</i>
+                                                <input id="expira"type="date" class="datepicker" name="expira" required>
+                                                <label for="expira">Fecha de Expiración</label>
+                                                </div>
+                                                <button class="valign btn waves-effect waves-light col s2" type="submit">Agregar
+                                                    <i class="material-icons right">add</i>
+                                                </button>
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- fin card-panel -->
                     </div>
                 </div>
-            </div> <!-- lista de opciones -->
-            
+            </div> <!-- lista de opciones -->   
         </div>
     </main>
     <footer class="page-footer amber lighten-2"> <!-- Footer -->
