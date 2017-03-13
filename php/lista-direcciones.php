@@ -15,7 +15,7 @@
             echo "                             <td>";
             echo "                                 <p class='card-number'>".$row['direccionEnvio']."</p>";
             echo "                             </td>";
-            echo "                         </tr>echo ";
+            echo "                         </tr> ";
             $i++;
         }
     $mysqli->close();
