@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 11, 2017 at 05:49 PM
+-- Generation Time: Mar 13, 2017 at 03:47 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -66,15 +66,24 @@ INSERT INTO `metodos_pago` (`id`, `usuarioid`, `metodo`, `termina`, `expira`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pago`
+-- Table structure for table `orden`
 --
 
-CREATE TABLE `pago` (
+CREATE TABLE `orden` (
   `id` int(11) NOT NULL,
-  `metodo_pago` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `direccion_envio` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `cedula` int(8) DEFAULT NULL
+  `usuarioid` int(11) DEFAULT NULL,
+  `articuloid` int(11) DEFAULT NULL,
+  `articulocantidad` int(11) DEFAULT NULL,
+  `fechaOrden` date DEFAULT NULL,
+  `ventaid` int(11) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `orden`
+--
+
+INSERT INTO `orden` (`id`, `usuarioid`, `articuloid`, `articulocantidad`, `fechaOrden`, `ventaid`) VALUES
+(5, 4, 1, 1, NULL, 12);
 
 -- --------------------------------------------------------
 
@@ -102,7 +111,7 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`id`, `nombre`, `descripcion`, `precio`, `cantidad`, `categoria`, `marca`, `img1`, `img2`, `img3`, `img4`, `img5`) VALUES
-(1, 'Nintendo Switch', 'Nueva Consola de Nintendo', 299, 10, 'videojuego', 'nintendo', '', '', '', '', ''),
+(1, 'Nintendo Switch', 'Nueva Consola de Nintendo', 299, 10, 'videojuego', 'nintendo', 'images/producto/switch1.jpg', 'images/producto/switch2.jpg', 'images/producto/switch3.jpg', 'images/producto/switch4.jpg', 'images/producto/switch5.jpg'),
 (2, 'Capitan America', 'Figura de accion del capitan america', 20, 10, 'nino', 'marvel', '', '', '', '', '');
 
 -- --------------------------------------------------------
@@ -125,9 +134,7 @@ CREATE TABLE `sesion` (
 
 INSERT INTO `sesion` (`id`, `usuarioid`, `email`, `password`, `tipo`) VALUES
 (1, NULL, 'admin@admin.com', '1234', 'admin'),
-(2, 4, 'mnlalbani@gmail.com', '1234', 'cliente'),
-(3, NULL, 'noelieth@gmail.com', '1234', 'cliente'),
-(4, NULL, 'nuevo@nuevo.com', '1234', 'cliente');
+(2, 4, 'mnlalbani@gmail.com', '1234', 'cliente');
 
 -- --------------------------------------------------------
 
@@ -150,9 +157,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `cedula`, `telefono`, `email`, `residencia`) VALUES
-(4, 'Manuel', NULL, NULL, NULL, 'mnlalbani@gmail.com', NULL),
-(5, 'noelieth', NULL, NULL, NULL, 'noelieth@gmail.com', NULL),
-(6, 'nuevo', NULL, NULL, NULL, 'nuevo@nuevo.com', NULL);
+(4, 'Manuel', NULL, NULL, NULL, 'mnlalbani@gmail.com', NULL);
 
 -- --------------------------------------------------------
 
@@ -162,11 +167,18 @@ INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `cedula`, `telefono`, `email`
 
 CREATE TABLE `venta` (
   `id` int(11) NOT NULL,
-  `id_producto` int(11) DEFAULT NULL,
-  `cantidad_producto` int(10) DEFAULT NULL,
-  `cedula_cliente` int(8) DEFAULT NULL,
-  `precio_total` int(10) DEFAULT NULL
+  `preciototal` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `direccionEnvio` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `metodoPago` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `usuarioid` int(11) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `venta`
+--
+
+INSERT INTO `venta` (`id`, `preciototal`, `direccionEnvio`, `metodoPago`, `usuarioid`) VALUES
+(12, '338.9', 'Zoom Cumana plaza, Cumana, Estado sucre', '789', 4);
 
 --
 -- Indexes for dumped tables
@@ -185,9 +197,9 @@ ALTER TABLE `metodos_pago`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `pago`
+-- Indexes for table `orden`
 --
-ALTER TABLE `pago`
+ALTER TABLE `orden`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -224,10 +236,10 @@ ALTER TABLE `venta`
 ALTER TABLE `metodos_pago`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `pago`
+-- AUTO_INCREMENT for table `orden`
 --
-ALTER TABLE `pago`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `orden`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `producto`
 --
@@ -237,12 +249,17 @@ ALTER TABLE `producto`
 -- AUTO_INCREMENT for table `sesion`
 --
 ALTER TABLE `sesion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+--
+-- AUTO_INCREMENT for table `venta`
+--
+ALTER TABLE `venta`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
