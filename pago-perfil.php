@@ -104,7 +104,7 @@
                                </tbody>
                             </table>
                            <br>
-                            <ul class="collapsible" data-collapsible="accordion">
+                            <ul class="collapsible  hoverable" data-collapsible="accordion">
                                 <li>
                                     <div class="collapsible-header"><i class="material-icons">add</i>Agrega Otra Tarjeta</div>
                                     <div class="collapsible-body">
