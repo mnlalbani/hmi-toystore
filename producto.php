@@ -4,7 +4,7 @@
     include("php/mostrar-producto.php");
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <script type="text/javascript" src="js/jquery-3.1.1.min"></script>
 	<script type="text/javascript" src="js/main.js"></script>

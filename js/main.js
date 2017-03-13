@@ -23,6 +23,8 @@ view.css('height', 400);
             selectMonths: true,
             selectYears: 15
       });
+      //materialbox
+      $('.materialboxed').materialbox();
       //validacion de contraseña
       $('#password').change(function(){
             if($(this).val().length > 0){
