@@ -113,12 +113,12 @@
                         <!-- #$-:Please do not edit lines starting with "#$" -->
                         <!-- #$VERSION:2.3 -->
                         <!-- #$AUTHOR:Albani -->
-                        <area shape="rect" coords="287,50,465,223" alt="videojuego" target="videojuego" href="videojuego" />
-                        <area shape="rect" coords="691,140,813,342" alt="bebe" target="bebe" href="bebe" />
-                        <area shape="rect" coords="59,232,349,475" alt="exterior" target="exterior" href="exterior" />
-                        <area shape="rect" coords="358,343,577,460" alt="mesa" target="mesa" href="mesa" />
-                        <area shape="rect" coords="1054,224,1342,458" alt="nina" target="nina" href="nina" />
-                        <area shape="rect" coords="824,222,1036,460" alt="nino" target="nino" href="nino" />
+                        <area shape="rect" coords="287,50,465,223" alt="videojuego" target="_self" href="lista.php?categoria=videojuego" />
+                        <area shape="rect" coords="691,140,813,342" alt="bebe" target="_self" href="lista.php?categoria=bebe" />
+                        <area shape="rect" coords="59,232,349,475" alt="exterior" target="_self" href="lista.php?categoria=exterior" />
+                        <area shape="rect" coords="358,343,577,460" alt="mesa" target="_self" href="lista.php?categoria=mesa" />
+                        <area shape="rect" coords="1054,224,1342,458" alt="nina" target="_self" href="lista.php?categoria=nina" />
+                        <area shape="rect" coords="824,222,1036,460" alt="nino" target="_self" href="lista.php?categoria=nino" />
                     </map>
                 </div>
         </div>
