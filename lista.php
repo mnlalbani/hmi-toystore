@@ -17,12 +17,12 @@
     <meta charset="UTF-8">
     <title>Vista Lista de Articulos</title>
     <style>
-        footer {
+        footer,nav {
       padding-left: 300px;
         }
 
     @media only screen and (max-width : 992px) {
-        footer {
+        footer,nav {
         padding-left: 0;
       }
     }
@@ -34,7 +34,9 @@
             <nav class="light-blue lighten-2">
                 <div class="nav-wrapper">
                     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-                    <a href="index.php" class="brand-logo">Logo</a>
+                    <a href="index.php" class="brand-logo left">
+                        <img src="images/logo/logo.png" class="logo-img" alt="">
+                    </a>
                     <ul class="right">
                         <li><a href="lista.php"><i class="material-icons left">search</i></a></li>
                         <?php

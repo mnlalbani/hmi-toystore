@@ -21,7 +21,9 @@
         <div class="navbar-fixed"> <!-- Barra de Navegación -->
             <nav class="light-blue lighten-2">
                 <div class="nav-wrapper">
-                    <a href="index.php" class="brand-logo left">Logo</a>
+                    <a href="index.php" class="brand-logo left">
+                        <img src="images/logo/logo.png" class="logo-img" alt="">
+                    </a>
                     <ul class="right">
                         <li><a href="lista.php"><i class="material-icons left">search</i><span class="hide-on-med-and-down">Búsqueda</span></a></li>
                         <?php
