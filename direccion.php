@@ -20,7 +20,7 @@
 <body>
     <header>
         <div class="navbar-fixed"> <!-- Barra de Navegación -->
-            <nav>
+            <nav class="teal lighten-2">
                 <div class="nav-wrapper">
                     <a href="index.php" class="brand-logo">Logo</a>
                     <ul class="right">
@@ -117,7 +117,7 @@
             </div>  <!-- fin contenedor lista compra -->
         </div>
     </main>
-    <footer class="page-footer light-blue lighten-2"> <!-- Footer -->
+    <footer class="page-footer teal lighten-2"> <!-- Footer -->
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
