@@ -28,6 +28,9 @@ view.css('height', 400);
       });
       //materialbox
       $('.materialboxed').materialbox();
+      //update input
+      Materialize.updateTextFields();
+      
       //validacion de contraseña
       $('#password').change(function(){
             if($(this).val().length > 0){

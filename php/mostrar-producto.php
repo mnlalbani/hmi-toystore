@@ -11,6 +11,7 @@ if(isset($_GET['id'])){
                $_COOKIE['img4'] = $row['img4'];
                $_COOKIE['precio'] = $row['precio'];
                $_COOKIE['nombre'] = $row['nombre'];
+               $_COOKIE['cantidad'] = $row['cantidad'];
                $_COOKIE['descripcion'] = $row['descripcion'];
         }
 }else{
