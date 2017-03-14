@@ -29,7 +29,7 @@ view.css('height', 400);
       //materialbox
       $('.materialboxed').materialbox();
       //update input
-      Materialize.updateTextFields();
+      //Materialize.updateTextFields();
       
       //validacion de contraseña
       $('#password').change(function(){
@@ -161,4 +161,11 @@ view.css('height', 400);
 			alert('Producto No Eliminado');
 		}
 	});//Fin eliminar producto
+
+      //mostrar imagen seleccionada al subir eliminarproducto
+     /* $('.file-path').unbind('change');
+      $('.file-path').change(function(){
+            var img = $(this).val();
+            $(this).closest('img').attr('src',img);
+      });*/
 });
