@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="text/javascript" src="js/jquery-3.1.1.min"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
