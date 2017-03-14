@@ -57,7 +57,9 @@
                         <li>
                             <form>
                                 <div class="input-field">
-                                    <input id="search" type="search" placeholder="Búsqueda">
+                                    <form method="POST" id="buscador" action="php/search.php">
+                                        <input id="search" type="search" placeholder="Búsqueda" name="search">    
+                                    </form>
                                     <label class="label-icon" for="search"><i class="material-icons left tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ingresa">search</i></label>
                                     <i class="material-icons">close</i>
                                 </div>

@@ -28,7 +28,7 @@
 <body>
     <header>
         <div class="navbar-fixed"> <!-- Barra de Navegación -->
-            <nav class="amber lighten-2">
+            <nav class="yellow darken-2">
                 <div class="nav-wrapper">
                     <a href="index.php" class="brand-logo left">
                         <img src="images/logo/logo.png" class="logo-img" alt="">
@@ -130,7 +130,7 @@
             
         </div>
     </main>
-    <footer class="page-footer amber lighten-2"> <!-- Footer -->
+    <footer class="page-footer yellow darken-2"> <!-- Footer -->
           <div class="container">
             <div class="row">
               <div class="col l6 s12">

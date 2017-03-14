@@ -168,4 +168,6 @@ view.css('height', 400);
             var img = $(this).val();
             $(this).closest('img').attr('src',img);
       });*/
+
+      
 });
