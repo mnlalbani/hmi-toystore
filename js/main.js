@@ -138,6 +138,24 @@ view.css('height', 400);
                   }
             })
       })
-      //formulario comprar en producto
-      
+
+
+      $('.eliminarproducto').unbind('click'); 
+	$('.eliminarproducto').click(function(e){
+		e.preventDefault();
+		var id = $(this).attr('value');
+		var row= $(this).closest('.tarjeta');
+		var respuesta = confirm('¿Está seguro que desea elliminar este producto?');
+		if(respuesta){
+			$.post('php/eliminar-producto.php',{id:id},function(data){
+				row.fadeOut(1000,
+					function(){
+						row.remove();
+					});
+				alert('Producto Eliminado Correctamente');
+		})
+		}else{
+			alert('Producto No Eliminado');
+		}
+	});//Fin eliminar producto
 });
