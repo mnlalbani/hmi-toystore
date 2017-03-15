@@ -23,9 +23,42 @@
             height: 100px;
             margin-top: 15px;
         }
+        .modal{
+            height: 90% !important;
+        }
     </style>
+    <script>
+        
+    </script>
 </head>
 <body>
+                                        <div id="editar-pago-modal" class="modal">
+                                                <div class="modal-content">
+                                                <h5 class="flow-text">Edita la tarjeta</h5>
+                                                <form action="php/editar-pago.php" method="POST">
+                                                    <input type="text" name="pago" value="true" hidden>
+                                                    <input type="text" name="id" class="id-pago" hidden>
+                                                        <div class="row valign-wrapper">
+                                                            <div class="input-field col s5">
+                                                            <i class="material-icons prefix">credit_card</i>
+                                                            <input id="metodo" type="text" class="validate" name="metodo-e" required class="metodo">
+                                                            <label for="metodo">Tipo de Tarjeta</label>
+                                                            </div>
+                                                            <div class="input-field col s5">
+                                                            <i class="material-icons prefix">credit_card</i>
+                                                            <input id="numero" type="text" class="validate" name="numero-e" required class="numero">
+                                                            <label for="numero">Numero de Tarjeta</label>
+                                                            </div>
+                                                            <div class="input-field col s5">
+                                                            <i class="material-icons prefix">date_range</i>
+                                                            <input id="expira"type="date" class="datepicker" name="expira-e" required class="fecha">
+                                                            <label for="expira">Fecha de Expiración</label>
+                                                            </div>
+                                                            <button class="valign btn waves-effect waves-light col s2 btn-editar-pago" type="submit">Editar</button>
+                                                        </div>
+                                                </form>
+                                            </div>
+                                        </div>
     <header>
         <div class="navbar-fixed"> <!-- Barra de Navegación -->
             <nav class="amber lighten-2">

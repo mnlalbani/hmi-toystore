@@ -201,7 +201,40 @@ $('.modal').modal();
             }
            
             });
-            
+           //Edita pago
+            $('.editar-pago').unbind('click');
+            $('.editar-pago').click(function(e){
+            e.preventDefault();
+            var id = $(this).attr('value');
+            $.post('php/editar-pago.php',{id:id,mostrar:true},function(data){
+                  var respuesta = JSON.parse(data);
+                  $('#metodo').val(respuesta.metodo);
+                  $('#numero').val(respuesta.termina);
+                  $('#expira').val(respuesta.expira);
+                  $('.id-pago').val(respuesta.id);
+                  $('.modal').modal('open');
+            });
+      });
+      //eliminar pago
+      $('.eliminar-pago').unbind('click');
+      $('.eliminar-pago').click(function(e){
+            e.preventDefault();
+            var id = $(this).attr('value');
+            var response = confirm("Está seguro que desea eliminar esta tarjeta?");
+            if(response){
+                   $.post('php/eliminar-pago.php',{id:id},function(data){
+                        $('.fila-pago').fadeOut(1000,
+					function(){
+						$('.fila-pago').remove();
+					});
+				alert('Tarjeta Eliminada Correctamente');
+                   });
+            }else{
+                  	alert('Tarjeta No liminada');
+            }
+           
+            });
+
 
       
 });
