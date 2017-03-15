@@ -48,6 +48,7 @@
         <div class="row">
             <div class="col s12 m12 l7">
                 <div class="row"> <!-- fila de productos-->
+                
                     <?php 
                         include("php/nuevo-carro.php");
                         include("php/articulos-carro.php");

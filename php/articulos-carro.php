@@ -3,6 +3,7 @@
     if(isset($_SESSION['carrito'])){
     $datos=$_SESSION['carrito'];    
     $total=0;
+    echo "<h5 class='flow-text col offset-s1'>Artículos en el Carrito</h5>";
     for($i=0;$i<count($datos);$i++){
 
 
