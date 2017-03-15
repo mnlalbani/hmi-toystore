@@ -12,7 +12,11 @@
     $result = $mysqli->query($sql);
     $a = mysqli_num_rows($result);
     if ($a > 0) {
-
+          $sqlusuario = "SELECT `nombre` FROM `usuario` WHERE `email` = '$correo'";
+          $resultnombre = $mysqli->query($sqlusuario);
+          while($b = mysqli_fetch_assoc($resultnombre)){
+            $_SESSION['nom_usu'] = $b['nombre'];
+          }    
       while($a = mysqli_fetch_assoc($result)){
         $_SESSION['correo'] = $correo;
         $_SESSION['usuarioid'] = $a['usuarioid'];
