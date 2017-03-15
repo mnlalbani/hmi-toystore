@@ -78,18 +78,11 @@ nav .brand-logo {
                     <a href="index.php" class="brand-logo left">
                         <img src="images/logo/logo.png" class="logo-img" alt="">
                     </a>
+                        <form method="GET" action="lista.php" style ="margin-left:30%;width:40%;" class="left">
+                                <input type="search" class="search" placeholder="Search..." name="busqueda" id="busqueda"/>
+                        </form>
+    
                     <ul class="right">
-                        <li>
-                            <form>
-                                <div class="input-field">
-                                    <form method="POST" id="buscador" action="php/search.php">
-                                        <input id="search" type="search" placeholder="Búsqueda" name="search">    
-                                    </form>
-                                    <label class="label-icon" for="search"><i class="material-icons left tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ingresa">search</i></label>
-                                    <i class="material-icons">close</i>
-                                </div>
-                            </form>
-                        </li>
                         <?php
                             if(isset($_SESSION['correo'])){
                             echo "<li><a href='perfil.php'><i class='material-icons left tooltipped' data-position='bottom' data-delay='50' data-tooltip='Perfil'>account_circle</i><span class='hide-on-med-and-down'>Perfil</span></a></li>";
@@ -158,22 +151,7 @@ nav .brand-logo {
                 <a href="lista.php?categoria=mesa" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Juegos de Mesa</h5></a>
                 
                 <div class="col l12 hide-on-med-and-down">
-                    <img src="images/categoria.jpg" width="1300" height="480" border="0" class="" alt="" usemap="#map" >
-                    <!--<img src="categoria.xcf" width="1300" height="480" border="0" />-->
-
-                    <map name="map">
-                        <!-- #$-:Image map file created by GIMP Image Map plug-in -->
-                        <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
-                        <!-- #$-:Please do not edit lines starting with "#$" -->
-                        <!-- #$VERSION:2.3 -->
-                        <!-- #$AUTHOR:Albani -->
-                        <area shape="rect" coords="287,50,465,223" alt="videojuego" target="_self" href="lista.php?categoria=videojuego" />
-                        <area shape="rect" coords="691,140,813,342" alt="bebe" target="_self" href="lista.php?categoria=bebe" />
-                        <area shape="rect" coords="59,232,349,475" alt="exterior" target="_self" href="lista.php?categoria=exterior" />
-                        <area shape="rect" coords="358,343,577,460" alt="mesa" target="_self" href="lista.php?categoria=mesa" />
-                        <area shape="rect" coords="1054,224,1342,458" alt="nina" target="_self" href="lista.php?categoria=nina" />
-                        <area shape="rect" coords="824,222,1036,460" alt="nino" target="_self" href="lista.php?categoria=nino" />
-                    </map>
+                    
                 </div>
         </div>
         <div class="row"> 
