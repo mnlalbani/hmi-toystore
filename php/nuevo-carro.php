@@ -78,4 +78,8 @@
 			//var_dump($_SESSION['carrito']);
 			unset($_SESSION['carrito'][$_GET['delete']]);
 		}
+	if(isset($_GET['minus'])){
+			//var_dump($_SESSION['carrito']);
+			$_SESSION['carrito'][$_GET['pos']]['cantidad']= $_SESSION['carrito'][$_GET['pos']]['cantidad'] - $_GET['minus'];
+		}
 ?>

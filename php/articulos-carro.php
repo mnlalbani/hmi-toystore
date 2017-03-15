@@ -22,7 +22,7 @@
         echo "</div>";
         echo "<div class='card-action'>";
         echo "<a href='producto.php?id=".$datos[$i]['id']."'>".$datos[$i]['nombre']."</a>";
-        echo "<a href='producto.php?id=".$datos[$i]['id']."'><i data-position='top' data-delay='50' data-tooltip='Disminuir Cantidad' class='tooltiped material-icons'>remove_circle</i></a>";
+        echo "<a href='carro.php?pos=".$i."&minus=1'><i data-position='top' data-delay='50' data-tooltip='Disminuir Cantidad' class='tooltiped material-icons'>remove_circle</i></a>";
         echo "<a href='carro.php?new-producto-id=".$datos[$i]['id']."'><i data-position='top' data-delay='50' data-tooltip='Aumentar Cantidad' class='tooltiped material-icons'>add_circle</i></a>";
         echo "<a href='carro.php?delete=".$i."' ><i data-position='top' data-delay='50' data-tooltip='Eliminar del Carro'class='tooltiped material-icons'>remove_shopping_cart</i></a>";
         echo "</div>";
