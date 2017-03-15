@@ -63,6 +63,16 @@
                                         <blockquote cite="" class="">
                             <h5><?php echo "Bienvenido, ".$_SESSION['nombreusuario'].""; ?> </h5>
                             <ul>
+                                <?php 
+                                    if(isset($_SESSION['tipo'])){
+                                        if($_SESSION['tipo'] == 'admin'){
+                                            echo "<a href='admin-lista-producto.php'>Gestiona los Productos</a>";
+                                            echo " <div class='section'></div>";
+                                        }
+
+                                    }
+                                
+                                ?>
                                 <li>
                                     <a href="direcciones-perfil.php">Gestiona tus direcciones de envío</a>
                                 </li>

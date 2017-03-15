@@ -59,9 +59,29 @@ body {
   height: 70px;
   background-color: #29b6f6 !important;
 }
-.logo-img{
-  padding-left: 10px;
-  width: 120px !important;
-  height: 60px !important;
+nav {
+    height: 80px;
+    line-height: 80px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height: 80px;
+    line-height: 80px;
+}
+
+nav .button-collapse i {
+    height: 80px;
+    line-height: 80px;
+}
+
+nav .brand-logo { 
+    font-size: 1.6rem; 
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height:  80px;
+        line-height:  80px;
+    }
 }
      

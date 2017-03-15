@@ -43,6 +43,31 @@
     height: 30px;
     margin-right: 5px;
 }
+nav {
+    height: 80px;
+    line-height: 80px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height: 80px;
+    line-height: 80px;
+}
+
+nav .button-collapse i {
+    height: 80px;
+    line-height: 80px;
+}
+
+nav .brand-logo { 
+    font-size: 1.6rem; 
+}
+
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height:  80px;
+        line-height:  80px;
+    }
+}
     </style>
 </head>
 <body>
