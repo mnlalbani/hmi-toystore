@@ -190,6 +190,7 @@ $('.modal').modal();
             e.preventDefault();
             var id = $(this).attr('value');
             $.post('php/editar-direccion.php',{id:id,mostrar:true},function(data){
+                  console.log(data);
                   var respuesta = JSON.parse(data);
                   $('.direccionEditar').val(respuesta.direccion);
                   $('.id-direccion').val(respuesta.id)
