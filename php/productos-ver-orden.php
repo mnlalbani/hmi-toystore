@@ -1,12 +1,15 @@
 <?php
     include("conexion.php");
     $a = 0;
+    $cantidadtotal = 0;
+    $preciototal = 0;
      foreach($articuloid['articuloid'] as &$values){
         $sqlarticulo = "SELECT * FROM `producto` WHERE `id` = '".$articuloid['articuloid'][$a]."'";
+        $a++;
         //echo $sqlarticulo;
         $resultarticulo = $mysqli->query($sqlarticulo);
-}	
-    $a++;
+    
+    
         $c = 0;
         while($rows = mysqli_fetch_array($resultarticulo)) {
        echo  "<div class='card horizontal hoverable'>";
@@ -17,16 +20,19 @@
        echo  "<div class='card-content'>";
        echo  "<p class='truncate'>".$rows['nombre']."</p>";
        echo  "<p>Precio por unidad: $".$rows['precio']." </p>";
-       echo  "<p>Cantidad: ".$datos['cantidad']."</p>";
+       echo  "<p>Cantidad: ".$rows['cantidad']."</p>";
        echo  "</div>";
        echo  "<div class='card-action'>";
-       echo  "<a href='producto.php?id=".$rows['id']."'>".$rows['id']."</a>";
+       echo  "<a href='producto.php?id=".$rows['id']."'>".$rows['nombre']."</a>";
        echo  "</div>";
        echo  "</div>";
        echo  "</div>";
-       //$total=($datos[$i]['cantidad']*$datos[$i]['precio'])+$total;
+       $cantidadtotal = $rows['cantidad']+$cantidadtotal;
+       $preciototal = $rows['precio']+$preciototal;
        $c++;
-       echo $sqlarticulo;
+      // echo $sqlarticulo;
     
-}				
+}	
+     }		
+     $preciodefinitivo = $preciototal*$cantidadtotal;	
 ?>

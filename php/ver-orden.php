@@ -4,6 +4,6 @@
     $result = $mysqli ->query($sql);
     $i = 0;
     while($row = mysqli_fetch_array($result)) {
-        echo $articuloid['articuloid'][$i] = $row['articuloid'];
+         $articuloid['articuloid'][$i] = $row['articuloid'];
         $i++;
     }

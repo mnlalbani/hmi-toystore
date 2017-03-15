@@ -65,7 +65,7 @@
                         <li class="tab col s3 disabled" ><a href="#test1">Login</a></li>
                         <li class="tab col s3 disabled" ><a href="#test2">Dirección</a></li>
                         <li class="tab col s3 disabled" ><a href="#test3">Pago</a></li>
-                        <li class="tab col s3 disabled " ><a class="active" href="#test4">Ordena</a></li>
+                        <li class="tab col s3 disabled " ><a class="active" href="#test4">Ver Orden</a></li>
                     </div>
                 </ul>  
             </div>
@@ -144,7 +144,7 @@
                             <tbody>
                                 <tr>
                                     <td>Producto (s)</td>
-                                    <td><span>$<?php echo $total;?></span></td>
+                                    <td><span>$<?php echo $preciodefinitivo;?></span></td>
                                 </tr>
                                 <tr>
                                     <td>Envío y manejo</td>
@@ -152,7 +152,7 @@
                                 </tr>
                                 <tr>
                                     <td>Total antes de impuestos</td>
-                                    <td><span>$<?php echo $total+10;?></span></td>
+                                    <td><span>$<?php echo $preciodefinitivo+10;?></span></td>
                                 </tr>
                                 <tr>
                                     <td>Impuesto estimado</td>
@@ -160,7 +160,7 @@
                                 </tr>
                                 <tr>
                                     <td>Total a pagar</td>
-                                    <td><span><?php echo $_GET['preciototal'];?></span></td>
+                                    <td><span>$<?php echo $preciodefinitivo + ((10/100)*$preciodefinitivo); ?></span></td>
                                 </tr>
                             </tbody>
                         </table>
