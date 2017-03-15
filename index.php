@@ -104,45 +104,31 @@ nav .brand-logo {
     <main class="grey lighten-4">  
     <div style="margin-bottom:10px"></div>
         <div class="row">
-            <!--<div class="carousel carousel-slider z-depth-1 hide-on-med-and-down" data-indicators="true" style="height:300px">
-                    <div class="carousel-item">
-                        <a href="#one!"><img src="images/toy-store-1.jpg" class="responsive-img"></a>
+            <div class="slider">
+                <ul class="slides">
+                <li>
+                    <img src="images/producto/gam3.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                    <h1 class="white-text">Soldados de Plástico Que Tanto Deseas!</h1>
+                    <a href="producto.php?id=3" class="light grey-text text-lighten-3"><h3>Compralo Ya!</h3></a>
                     </div>
-                    <div class="carousel-item">
-                        <a  href="#two!"><img src="images/toy-store-1.jpg" class="responsive-img"></a>
+                </li>
+                <li>
+                    <img src="images/producto/ca.jpg"> <!-- random image -->
+                    <div class="caption left-align">
+                    <h1 class="white-text">Figura Capitán América Civil War</h1>
+                    <a href="producto.php?id=2" class="light grey-text text-lighten-3"><h3>Compralo Ya!</h3></a>
                     </div>
-                    <div class="carousel-item">
-                        <a  href="#three!"><img src="images/toy-store-3.jpg" class="responsive-img"></a>
+                </li>
+                <li>
+                    <img src="images/producto/switch3.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                    <h1 class="white-text">Nuevo Nintendo Switch</h1>
+                    <a href="producto.php?id=1" class="light grey-text text-lighten-3"><h3>Compralo Ya!</h3></a>
                     </div>
-                    <div class="carousel-item">
-                        <a  href="#four!"><img src="images/toy-store-4.jpg" class="responsive-img"></a>
-                    </div>
-                -->
-                <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="images/producto/gam3.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h1 class="white-text">Soldados de Plástico Que Tanto Deseas!</h1>
-          <a href="producto.php?id=3" class="light grey-text text-lighten-3"><h3>Compralo Ya!</h3></a>
-        </div>
-      </li>
-      <li>
-        <img src="images/producto/ca.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h1 class="white-text">Figura Capitán América Civil War</h1>
-          <a href="producto.php?id=2" class="light grey-text text-lighten-3"><h3>Compralo Ya!</h3></a>
-        </div>
-      </li>
-      <li>
-        <img src="images/producto/switch3.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h1 class="white-text">Nuevo Nintendo Switch</h1>
-          <a href="producto.php?id=1" class="light grey-text text-lighten-3"><h3>Compralo Ya!</h3></a>
-        </div>
-      </li>
-    </ul>
-  </div>
+                </li>
+                </ul>
+            </div>
             </div>
         </div>
         <div class="row z-depth-1">
@@ -154,7 +140,7 @@ nav .brand-logo {
                 <a href="lista.php?categoria=mesa" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Juegos de Mesa</h5></a>
                 
                 <div class="col l12 hide-on-med-and-down">
-                    
+                    <img src="images/estanteria.svg" alt="" class="responsive-img">
                 </div>
         </div>
         <div class="row"> 
