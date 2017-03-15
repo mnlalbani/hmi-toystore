@@ -5,7 +5,7 @@
     $result= $mysqli->query($sql);
     $i = 0;
     while($row = mysqli_fetch_array($result)) {
-            echo " <tr> <!-- Fila de tabla pago -->";
+            echo " <tr class='fila-direccion'> <!-- Fila de tabla pago -->";
             echo "                              <td>";
             echo "                                      <p>";
             echo "                                          <input class='with-gap' name='direccionEnvio' type='radio' id='".$i."' value='".$row['direccionEnvio']."' required checked/>";
@@ -17,6 +17,9 @@
             echo "                             </td>";
             echo "                             <td>";
             echo "<a class='editar-direccion btn ' value='".$row['id']."'>Editar</a>";
+            echo "                             </td>";
+            echo "                             <td>";
+            echo "<a class='eliminar-direccion btn red' value='".$row['id']."'>Eliminar</a>";
             echo "                             </td>";
             echo "                         </tr> ";
             $i++;

@@ -180,10 +180,28 @@ $('.modal').modal();
                   console.log(respuesta.direccion);
                   $('.modal').modal('open');
             });
-            //console.log($(this).attr('value'));
+           
       });
-
-      
+      //eliminar direccion
+      $('.eliminar-direccion').unbind('click');
+      $('.eliminar-direccion').click(function(e){
+            e.preventDefault();
+            var id = $(this).attr('value');
+            var response = confirm("Está seguro que desea eliminar esta direccion?");
+            if(response){
+                   $.post('php/eliminar-direccion.php',{id:id},function(data){
+                        $('.fila-direccion').fadeOut(1000,
+					function(){
+						$('.fila-direccion').remove();
+					});
+				alert('Direccion Eliminada Correctamente');
+                   });
+            }else{
+                  	alert('Direccion No liminada');
+            }
+           
+            });
+            
 
       
 });
