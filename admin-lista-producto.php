@@ -35,7 +35,7 @@
 <body>
     <header>
         <div class="navbar-fixed"> <!-- Barra de Navegación -->
-            <nav class="light-blue lighten-2">
+            <nav class="yellow darken-2">
                 <div class="nav-wrapper">
                     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
                     <a href="index.php" class="brand-logo left">
@@ -132,7 +132,7 @@
             </div><!-- fin contenido principal -->           
         </div>     
     </main>
-    <footer class="page-footer light-blue lighten-2"> <!-- Footer -->
+    <footer class="page-footer yellow darken-2"> <!-- Footer -->
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
