@@ -79,9 +79,9 @@ nav .brand-logo {
                         <img src="images/logo/logo.png" class="logo-img responsive-img" alt="">
                     </a>
                     
-                        <form method="GET" action="lista.php" class="">
+                        <!--<form method="GET" action="lista.php" class="">
                                 <input type="search" class="search" placeholder="Search..." name="busqueda" id="busqueda"/>
-                        </form>
+                        </form> -->
                         
                     </div>
     
