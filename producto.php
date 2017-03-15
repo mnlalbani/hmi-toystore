@@ -93,11 +93,8 @@
                                     <div class="col s12">
                                         <div class="input-field ">
                                             <b>Cantidad</b>
-                                            <select name="cantidad">
-                                                <option value="1" selected> 1</option>
-                                                <option value="2"> 2</option>
-                                                <option value="3"> 3</option>
-                                            </select>
+                                            <?php include_once("php/cantidad-producto.php");
+                                            ?>
                                         </div>
                                         <button class="col s12 center-align waves-effect waves-light btn"type="submit">Comprar</button>
                                     </div>
