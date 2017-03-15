@@ -76,6 +76,9 @@
                                 
                                 ?>
                                 <li>
+                                    <a href="orden-perfil.php">Revisa tus Ordenes</a>
+                                </li>
+                                <li>
                                     <a href="direcciones-perfil.php">Gestiona tus direcciones de envío</a>
                                 </li>
                                 <li>
