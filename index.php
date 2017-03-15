@@ -75,21 +75,15 @@ nav .brand-logo {
         <div class="navbar-fixed"> <!-- Barra de Navegación -->
             <nav class="light-blue lighten-2">
                 <div class="nav-wrapper">
-                    <a href="index.php" class="brand-logo left">
-                        <img src="images/logo/logo.png" class="logo-img responsive-img" alt="">
+                   <a href="index.php" class="brand-logo left">
+                        <img src="images/logo/logo.png" class="responsive-img logo-img" alt="">
                     </a>
-                    
-                        <!--<form method="GET" action="lista.php" class="">
-                                <input type="search" class="search" placeholder="Search..." name="busqueda" id="busqueda"/>
-                        </form> -->
-                        
-                    </div>
-    
                     <ul class="right">
+                        <li><a href="lista.php"><i class="material-icons left">search</i><span class="hide-on-med-and-down">Búsqueda</span></a></li>
                         <?php
                             if(isset($_SESSION['correo'])){
                             echo "<li><a href='perfil.php'><i class='material-icons left tooltipped' data-position='bottom' data-delay='50' data-tooltip='Perfil'>account_circle</i><span class='hide-on-med-and-down'>Perfil</span></a></li>";
-                            echo "<li><a href='carro.php'><i class='material-icons left tooltipped' data-position='bottom' data-delay='50' data-tooltip='Carro''>shopping_cart</i>Carro</a></li>";
+                            echo "<li class='active'><a href='carro.php'><i class='material-icons left tooltipped' data-position='bottom' data-delay='50' data-tooltip='Carro''>shopping_cart</i>Carro</a></li>";
                             echo "<li><a href='index.php?logout=true'><i class='material-icons left tooltipped' data-position='bottom' data-delay='50' data-tooltip='Salir'>exit_to_app</i><span class='hide-on-med-and-down'>Salir</span></a></li>";
                             }else{
                             echo "<li><a href='login.php'><i class='material-icons left tooltipped' data-position='bottom' data-delay='50' data-tooltip='Ingresa'>account_circle</i><span class='hide-on-med-and-down'>Ingresa</span></a></li>";
