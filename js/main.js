@@ -265,7 +265,7 @@ $('input.autocomplete').autocomplete({
       "Juegos para bebés":null,
       "Carros": null,
       "Muñecas": null,
-      "Pelota": null
+      "Pelota": null,
       "Bicicleta": null
     }
   });
