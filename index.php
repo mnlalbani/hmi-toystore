@@ -132,9 +132,8 @@ nav .brand-logo {
                 <a href="lista.php?categoria=exterior" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Exterior</h5></a>
                 <a href="lista.php?categoria=videojuego" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Videojuegos</h5></a>
                 <a href="lista.php?categoria=mesa" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Juegos de Mesa</h5></a>
-                
                 <div class="col l12 hide-on-med-and-down">
-                    <img src="images/estanteria.svg" alt="" class="responsive-img">
+                    <img src="images/estanteria.svg" alt="" class="responsive-img" style="margin-top:10px;">
                 </div>
         </div>
         <div class="row"> 
