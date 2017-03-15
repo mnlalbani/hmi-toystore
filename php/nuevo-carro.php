@@ -72,5 +72,8 @@
 										'cantidad'=>$aux);
 			$_SESSION['carrito']=$arreglo;
 		}
+		if(isset($_GET['delete'])){
+			unset($_SESSION['carrito'][$_GET['delete']]);
+		}
 	}
 ?>
