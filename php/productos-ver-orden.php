@@ -11,22 +11,22 @@
         while($rows = mysqli_fetch_array($resultarticulo)) {
        echo  "<div class='card horizontal hoverable'>";
        echo  "<div class='card-image'>";
-       echo "<img src='".$rows['img1'][$c]."'>";
+       echo "<img src='".$rows['img1']."'>";
        echo  "</div>";
        echo  "<div class='card-stacked'>";
        echo  "<div class='card-content'>";
-       echo  "<p class='truncate'>".$rows['nombre'][$c]."</p>";
-       echo  "<p>Precio por unidad: $".$rows['precio'][$c]." </p>";
-       echo  "<p>Cantidad: ".$datos[$i]['cantidad']."</p>";
+       echo  "<p class='truncate'>".$rows['nombre']."</p>";
+       echo  "<p>Precio por unidad: $".$rows['precio']." </p>";
+       echo  "<p>Cantidad: ".$datos['cantidad']."</p>";
        echo  "</div>";
        echo  "<div class='card-action'>";
-       echo  "<a href='producto.php?id=".$rows['id'][$c]."'>".$rows['id'][$c]."</a>";
+       echo  "<a href='producto.php?id=".$rows['id']."'>".$rows['id']."</a>";
        echo  "</div>";
        echo  "</div>";
        echo  "</div>";
        //$total=($datos[$i]['cantidad']*$datos[$i]['precio'])+$total;
        $c++;
-       echo $articuloid['articuloid'][1];
+       echo $sqlarticulo;
     
 }				
 ?>

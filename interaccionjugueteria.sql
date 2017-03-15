@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 15, 2017 at 01:46 AM
+-- Generation Time: Mar 15, 2017 at 10:47 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `interaccionjugueteria`
 --
-CREATE DATABASE IF NOT EXISTS `interaccionjugueteria` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-USE `interaccionjugueteria`;
 
 -- --------------------------------------------------------
 
@@ -41,7 +39,7 @@ CREATE TABLE `direcciones` (
 INSERT INTO `direcciones` (`usuarioid`, `direccionEnvio`, `id`) VALUES
 (4, 'MRW Perimetral -Cumaná, Estado Sucre', 1),
 (4, 'Zoom Cumana plaza, Cumana, Estado sucre', 2),
-(1, 'Zoom cumana etc et c', 3);
+(1, 'direccion nueva', 3);
 
 -- --------------------------------------------------------
 
@@ -63,7 +61,7 @@ CREATE TABLE `metodos_pago` (
 
 INSERT INTO `metodos_pago` (`id`, `usuarioid`, `metodo`, `termina`, `expira`) VALUES
 (1, 4, 'VISA', 789, '10/20'),
-(7, 1, 'VISA', 253, 'March, 2017');
+(11, 1, 'VISA', 123, 'March, 2017');
 
 -- --------------------------------------------------------
 
@@ -85,7 +83,13 @@ CREATE TABLE `orden` (
 --
 
 INSERT INTO `orden` (`id`, `usuarioid`, `articuloid`, `articulocantidad`, `fechaOrden`, `ventaid`) VALUES
-(11, 1, 2, 1, NULL, 18);
+(11, 1, 2, 1, NULL, 18),
+(12, 1, 1, 1, NULL, 19),
+(13, 1, 1, 1, NULL, 20),
+(14, 1, 1, 1, NULL, 21),
+(15, 1, 16, 1, NULL, 22),
+(16, 1, 2, 1, NULL, 23),
+(17, 1, 1, 1, NULL, 23);
 
 -- --------------------------------------------------------
 
@@ -114,17 +118,8 @@ CREATE TABLE `producto` (
 
 INSERT INTO `producto` (`id`, `nombre`, `descripcion`, `precio`, `cantidad`, `categoria`, `marca`, `img1`, `img2`, `img3`, `img4`, `img5`) VALUES
 (1, 'Nintendo Switch', 'Nueva Consola de Nintendo.', 299, 10, 'videojuego', 'nintendo', 'images/producto/switch1.jpg', 'images/producto/switch2.jpg', 'images/producto/switch3.jpg', 'images/producto/switch4.jpg', 'images/producto/switch5.jpg'),
-(2, 'Capitan Americano', 'Figura de accion del Capitan America CIVIL WAR.', 20, 10, 'nino', 'fisher-price', 'images/producto/ca1.jpg', 'images/producto/ca2.jpg', 'images/producto/ca3.jpg', 'images/producto/ca4.jpg', ''),
-(7, 'ASold', 'asdasd', 21321, 21312, 'nino', 'lego', 'images/producto/gam1.jpg', 'images/producto/gam4.jpg', 'images/producto/gam5.png', 'images/producto/gam5.png', NULL),
-(8, 'ASold', 'asdasd', 21321, 21312, 'nino', 'lego', 'images/producto/gam1.jpg', 'images/producto/gam4.jpg', 'images/producto/gam5.png', 'images/producto/gam5.png', NULL),
-(9, 'ASold', 'asdasd', 21321, 21312, 'nino', 'lego', 'images/producto/gam1.jpg', 'images/producto/gam4.jpg', 'images/producto/gam5.png', 'images/producto/gam5.png', NULL),
-(10, 'ASold', 'asdasd', 21321, 21312, 'nino', 'lego', 'images/producto/gam1.jpg', 'images/producto/gam4.jpg', 'images/producto/gam5.png', 'images/producto/gam5.png', NULL),
-(11, 'ASold', 'asdasd', 21321, 21312, 'nino', 'lego', 'images/producto/gam1.jpg', 'images/producto/gam4.jpg', 'images/producto/gam5.png', 'images/producto/gam5.png', NULL),
-(12, 'ASold', 'asdasd', 21321, 21312, 'nino', 'lego', 'images/producto/gam1.jpg', 'images/producto/gam4.jpg', 'images/producto/gam5.png', 'images/producto/gam5.png', NULL),
-(13, 'ASold', 'asdasd', 21321, 21312, 'nino', 'lego', 'images/producto/gam1.jpg', 'images/producto/gam4.jpg', 'images/producto/gam5.png', 'images/producto/gam5.png', NULL),
-(14, 'ASold', 'asdasd', 21321, 21312, 'nino', 'lego', 'images/producto/gam1.jpg', 'images/producto/gam4.jpg', 'images/producto/gam5.png', 'images/producto/gam5.png', NULL),
-(15, 'ASold', 'asdasd', 21321, 21312, 'nino', 'lego', 'images/producto/gam1.jpg', 'images/producto/gam4.jpg', 'images/producto/gam5.png', 'images/producto/gam5.png', NULL),
-(16, 'ASold', 'asdasd', 21321, 21312, 'nino', 'lego', 'images/producto/gam1.jpg', 'images/producto/gam4.jpg', 'images/producto/gam5.png', 'images/producto/gam5.png', NULL);
+(2, 'Capitan Americano', 'Figura de accion del Capitan America CIVIL WAR.', 20, 10, 'nino', 'marvel', 'images/producto/ca3.jpg', 'images/producto/ca2.jpg', 'images/producto/ca1.jpg', 'images/producto/ca4.jpg', ''),
+(3, 'Soldados de Plastico', 'Soldados de Plastico Verde', 20, 21312, 'nino', 'lego', 'images/producto/gam1.jpg', 'images/producto/gam4.jpg', 'images/producto/gam5.png', 'images/producto/gam5.png', NULL);
 
 -- --------------------------------------------------------
 
@@ -191,7 +186,12 @@ CREATE TABLE `venta` (
 --
 
 INSERT INTO `venta` (`id`, `preciototal`, `direccionEnvio`, `metodoPago`, `usuarioid`) VALUES
-(18, '32', 'Zoom cumana etc et c', '253', 1);
+(18, '32', 'Zoom cumana etc et c', '253', 1),
+(19, '338.9', 'Zoom cumana etc et c', '253', 1),
+(20, '338.9', 'Zoom cumana etc et c', '253', 1),
+(21, '338.9', 'Zoom cumana etc et c', '253', 1),
+(22, '23463.1', 'direccion nueva', '123', 1),
+(23, '360.9', 'direccion nueva', '123', 1);
 
 --
 -- Indexes for dumped tables
@@ -252,12 +252,12 @@ ALTER TABLE `direcciones`
 -- AUTO_INCREMENT for table `metodos_pago`
 --
 ALTER TABLE `metodos_pago`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `orden`
 --
 ALTER TABLE `orden`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `producto`
 --
@@ -277,7 +277,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `venta`
 --
 ALTER TABLE `venta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
