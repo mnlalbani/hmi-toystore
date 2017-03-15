@@ -183,8 +183,8 @@
                                                 </div>
                                                 <div class="input-field col s5">
                                                 <i class="material-icons prefix">date_range</i>
-                                                <input id="expira"type="date" class="datepicker" name="expira" required>
-                                                <label for="expira">Fecha de Expiración</label>
+                                                <input id="expira"type="date" class="datepicker" name="expira" placeholder="Fecha de Expiracion" required>
+
                                                 </div>
                                                 <button class="valign btn waves-effect waves-light col s2" type="submit">Agregar
                                                     <i class="material-icons right">add</i>
