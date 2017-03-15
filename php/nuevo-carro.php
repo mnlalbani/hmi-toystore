@@ -72,8 +72,10 @@
 										'cantidad'=>$aux);
 			$_SESSION['carrito']=$arreglo;
 		}
-		if(isset($_GET['delete'])){
+		
+	}
+	if(isset($_GET['delete'])){
+			//var_dump($_SESSION['carrito']);
 			unset($_SESSION['carrito'][$_GET['delete']]);
 		}
-	}
 ?>
