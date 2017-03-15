@@ -31,6 +31,7 @@
                     <a href="index.php" class="brand-logo left">
                         <img src="images/logo/logo.png" class="logo-img" alt="">
                     </a>
+                    
                     <ul class="right hide-on-med-and-down">
                         <?php
                             if(isset($_SESSION['correo'])){

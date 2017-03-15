@@ -251,6 +251,23 @@ $('.modal').modal();
            
             });
 
-
+$('input.autocomplete').autocomplete({
+    data: {
+      "Capitan America": null,
+      "Nintendo Switch": null,
+      "Soldados de Plastico": null,
+      "Nintendo": null,
+      "Marvel": null,
+      "Juegos de Exterior": null,
+      "Niñas": null,
+      "Niños": null,
+      "Juegos de Mesa": null,
+      "Juegos para bebés":null,
+      "Carros": null,
+      "Muñecas": null,
+      "Pelota": null
+      "Bicicleta": null
+    }
+  });
       
 });

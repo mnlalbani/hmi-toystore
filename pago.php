@@ -25,7 +25,20 @@
                         <img src="images/logo/logo.png" class="logo-img" alt="">
                     </a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="lista.php"><i class="material-icons left">search</i>Búsqueda</a></li>
+                       <li><form method="GET" action="lista.php">
+                                   <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">search</i>
+          <input type="text" id="autocomplete" class="autocomplete">
+          <label for="autocomplete">Búsqueda</label>
+        </div>
+      </div>
+    </div>
+  </div>
+                            </form>
+                        </li>
                         <?php
                             if(isset($_SESSION['correo'])){
                             echo "<li><a href='perfil.php'><i class='material-icons left tooltipped' data-position='bottom' data-delay='50' data-tooltip='Perfil'>account_circle</i><span class='hide-on-med-and-down'>".$_SESSION['nom_usu']."</span></a></li>";
