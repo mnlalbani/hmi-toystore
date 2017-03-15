@@ -133,7 +133,26 @@ nav .brand-logo {
                 <a href="lista.php?categoria=videojuego" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Videojuegos</h5></a>
                 <a href="lista.php?categoria=mesa" class="valign-wrapper col s6 m6 l2 light-blue lighten-2 index-category-link white-text"><h5 class="valign" style="margin: 0 auto">Juegos de Mesa</h5></a>
                 <div class="col l12 hide-on-med-and-down">
-                    <img src="images/estanteria.svg" alt="" class="responsive-img" style="margin-top:10px;">
+                    
+
+                    
+
+                    <img src="images/estanteria.svg" width="1326" height="655" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Albani -->
+<area shape="rect" coords="231,157,434,283" href="lista.php?categoria=mesa"  class="tooltiped" data-tooltip="Juegos de Mesa" data-position="bottom"/>
+<area shape="rect" coords="203,287,475,463" href="lista.php?categoria=exterior" />
+<area shape="rect" coords="560,125,745,279" href="lista.php?categoria=bebe" />
+<area shape="rect" coords="552,288,741,464" href="lista.php?categoria=nina" />
+<area shape="rect" coords="879,287,1112,459" href="lista.php?categoria=nino" />
+<area shape="rect" coords="890,140,1101,284" href="lista.php?categoria=videojuego" />
+</map>
+
                 </div>
         </div>
         <div class="row"> 

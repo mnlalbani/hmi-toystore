@@ -1,0 +1,15 @@
+<img src="[estanteria] (imported)" width="2560" height="1264" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Albani -->
+<area shape="poly" coords="464,526,464,461,569,463,542,407,580,347,665,377,687,333,735,356,714,388,720,421,744,444,743,465,825,465,823,542,460,543,462,532,461,532,465,525" href="lista.php?categoria=mesa" />
+<area shape="rect" coords="415,580,927,891" href="lista.php?categoria=exterior" />
+<area shape="poly" coords="1064,889,1067,824,1138,828,1155,730,1181,695,1180,614,1200,541,1239,531,1277,538,1292,590,1300,644,1315,723,1428,836,1435,904,1063,906" href="lista.php?categoria=nina" />
+<area shape="poly" coords="1682,640,1799,715,1868,771,1853,789,1750,801,1757,896,2125,892,2135,785,2097,781,2135,736,2061,661,2081,631,2030,586,1890,557,1704,590,1680,628" href="lista.php?categoria=nino" />
+<area shape="poly" coords="1733,535,2123,534,2116,459,2011,449,2019,414,2077,398,2040,270,1870,263,1805,300,1817,381,1738,396,1723,464,1717,525,1718,525" href="lista.php?categoria=videojuego" />
+<area shape="poly" coords="1059,472,1106,536,1296,522,1428,534,1429,367,1321,352,1319,253,1194,252,1150,294,1159,398,1112,431,1117,452,1066,469" href="lista.php?categoria=bebe" />
+</map>
