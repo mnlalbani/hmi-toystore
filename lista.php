@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	
     <script src="js/materialize.min.js"></script>
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -142,5 +142,6 @@
             </div>
           </div>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
