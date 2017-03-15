@@ -81,7 +81,20 @@
         </div>
     </header>
     <main class="grey lighten-5">
-        <div class="section"></div>
+        <div class="section">
+            
+        </div>
+        <div class="row"> <!-- flujo de actividad -->
+            <div class="col s12 m6 offset-m3 l6 offset-l4">
+                <ul class="tabs grey lighten-5">
+                    <div class="row">
+                        <li class="tab col s3 disabled" ><a href="#test1">Pagos</a></li>
+                        <li class="tab col s3 disabled" ><a  class="active"  href="#test2">Direcciones</a></li>
+                        <li class="tab col s3 disabled " ><a  href="#test4">Ver Orden</a></li>
+                    </div>
+                </ul>  
+            </div>
+        </div><!-- fin flujo de actividad -->
         <div class="row">
             <div class="col s12 m12 l5 right"><!-- Bienvenido -->
                 <div class="row">
