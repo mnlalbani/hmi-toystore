@@ -97,7 +97,9 @@
                             <form method="POST" action="" id="formulario-comprar-pago">
                                 <div class="row">
                                     <div class="col s12">
-                                        <button class="col s12 center-align waves-effect waves-light btn"type="submit">Continuar</button>
+                                        <button class="col s12 center-align waves-effect waves-light btn btn-continuar-pago"type="submit">Continuar</button>
+                                        <br>
+                                        <h5 class="col offset-s3 red-text flow-text response-pago">Elija Una tarjeta</h5>
                                     </div>
                                 </div>
                             </form>

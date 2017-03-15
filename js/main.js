@@ -96,6 +96,14 @@ $('.modal').modal();
 			}  
             })
       })
+      //desactivar continuar al elegir pago
+      if($('input[name=pago]:checked').length > 0){
+            $('.btn-continuar-pago').prop('disabled',false);
+            $('.response-pago').prop('hidden',true);
+      }else{
+            $('.btn-continuar-pago').prop('disabled',true);
+            $('.response-pago').prop('hidden',false);
+      }
       //comprar-metodo-pago
       $("#formulario-comprar-pago").unbind();
       $("#formulario-comprar-pago").on('submit',function(e){
