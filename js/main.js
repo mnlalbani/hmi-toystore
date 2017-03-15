@@ -23,6 +23,7 @@ view.css('height', 400);
       $('.collapsible').collapsible();
       //init datepicker
       $('.datepicker').pickadate({
+            min: 'Today',
             selectMonths: true,
             selectYears: 15
       });
