@@ -142,7 +142,12 @@ view.css('height', 400);
                   }
             })
       })
-
+      //Validar si carro esta vacio
+      if($('.aux').length > 0){
+            $('.carro-btn').prop('disabled',false);
+      }else{
+            $('.carro-btn').prop('disabled',true);
+      }//fin validacion carro boton
 
       $('.eliminarproducto').unbind('click'); 
 	$('.eliminarproducto').click(function(e){
@@ -163,12 +168,7 @@ view.css('height', 400);
 		}
 	});//Fin eliminar producto
 
-      //mostrar imagen seleccionada al subir eliminarproducto
-     /* $('.file-path').unbind('change');
-      $('.file-path').change(function(){
-            var img = $(this).val();
-            $(this).closest('img').attr('src',img);
-      });*/
+      
 
       
 });

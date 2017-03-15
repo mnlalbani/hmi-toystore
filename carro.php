@@ -85,11 +85,11 @@
                                         if(isset($datos)){
                                             for($i=0;$i<count($datos);$i++){
                                                             //<div id="articulo_pago">· <?php echo $datos[$i]['Nombre'];</div><br>
-                                                            echo "<input hidden type='text' class='' name='producto-id".$i."' value='".$datos[$i]['id']."'>";
+                                                            echo "<input hidden type='text' class='aux' name='producto-id".$i."' value='".$datos[$i]['id']."'>";
                                                         }
                                         }
                                             ?>
-                                        <button <?php //if(!isset($_SESSION['usuarioid'])){ echo "disabled"; } ?> class="col s12 center-align waves-effect waves-light btn"type="submit">Continuar</button>
+                                        <button <?php //if(!isset($_SESSION['usuarioid'])){ echo "disabled"; } ?> class="col s12 center-align waves-effect waves-light btn carro-btn"type="submit">Continuar</button>
                                     </div>
                                 </div>
                             </form>
