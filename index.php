@@ -86,7 +86,7 @@ nav .brand-logo {
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix">search</i>
-          <input type="text" id="autocomplete" class="autocomplete">
+          <input type="text" id="autocomplete" name="busqueda" class="autocomplete">
           <label for="autocomplete">Búsqueda</label>
         </div>
       </div>

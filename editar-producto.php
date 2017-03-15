@@ -64,7 +64,7 @@
             <div class="col s12 m12 l7"> <!-- contenedor SLider e imagenes-->
                 <div class="section"></div>
                 <div class="row"> <!-- contenedor imagenes secundarias -->
-                    <h5 class="flow-text">&nbsp;&nbsp;Imágenes</h5>
+                    <h5 class="flow-text">&nbsp;&nbsp;Por seguridad, debe subir nuevamente las imágenes.</h5>
                     <div class="col s3 m3 l3">  
                             <img src="<?php echo $_COOKIE['img1']?>" alt="" class="responsive-img z-depth-2 materialboxed">
                             <div class="file-field input-field">
