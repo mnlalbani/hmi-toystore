@@ -27,9 +27,15 @@ VALUES ('{$mysqli->real_escape_string($_POST['nombre'])}',
      '{$mysqli->real_escape_string($img3)}',
      '{$mysqli->real_escape_string($img4)}')";
         $result = $mysqli->query($sql);
-        $mysqli->close();
+        
     //redirección
-    header("Location: ../producto.php?id=".$_POST['id']."");
-    //echo $sql;
+    $sqlid = "SELECT `id` FROM `producto` ORDER BY `id` DESC LIMIT 1";
+    $resultid = $mysqli ->query($sqlid);
 
+    while($row = mysqli_fetch_array($resultid)) {
+                    $id = $row['id'];
+                }
+    header("Location: ../producto.php?id=".$id."");
+    //echo $sqlid, $id;
+    $mysqli->close();
 ?>
