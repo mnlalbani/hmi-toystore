@@ -1,8 +1,8 @@
 <?php
     session_start();
-    if(!isset($_SESSION['usuarioid'])){
+    /*if(!isset($_SESSION['usuarioid'])){
         header("location: index.php");
-    }
+    }*/
     include("php/perfil-usuario.php");
 ?>
 <!DOCTYPE html>
