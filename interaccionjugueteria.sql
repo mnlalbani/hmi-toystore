@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 15, 2017 at 10:47 AM
+-- Generation Time: Mar 15, 2017 at 01:00 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `interaccionjugueteria`
 --
+CREATE DATABASE IF NOT EXISTS `interaccionjugueteria` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `interaccionjugueteria`;
 
 -- --------------------------------------------------------
 
@@ -37,8 +39,7 @@ CREATE TABLE `direcciones` (
 --
 
 INSERT INTO `direcciones` (`usuarioid`, `direccionEnvio`, `id`) VALUES
-(4, 'MRW Perimetral -Cumaná, Estado Sucre', 1),
-(4, 'Zoom Cumana plaza, Cumana, Estado sucre', 2),
+(4, 'Zoom Cumana plaza, CumanÃ¡, Estado sucre', 2),
 (1, 'direccion nueva', 3);
 
 -- --------------------------------------------------------
@@ -89,7 +90,11 @@ INSERT INTO `orden` (`id`, `usuarioid`, `articuloid`, `articulocantidad`, `fecha
 (14, 1, 1, 1, NULL, 21),
 (15, 1, 16, 1, NULL, 22),
 (16, 1, 2, 1, NULL, 23),
-(17, 1, 1, 1, NULL, 23);
+(17, 1, 1, 1, NULL, 23),
+(18, 1, 2, 2, NULL, 24),
+(19, 1, 1, 1, NULL, 24),
+(20, 1, 3, 1, NULL, 25),
+(21, 4, 2, 2, NULL, 26);
 
 -- --------------------------------------------------------
 
@@ -191,7 +196,10 @@ INSERT INTO `venta` (`id`, `preciototal`, `direccionEnvio`, `metodoPago`, `usuar
 (20, '338.9', 'Zoom cumana etc et c', '253', 1),
 (21, '338.9', 'Zoom cumana etc et c', '253', 1),
 (22, '23463.1', 'direccion nueva', '123', 1),
-(23, '360.9', 'direccion nueva', '123', 1);
+(23, '360.9', 'direccion nueva', '123', 1),
+(24, '360.9', 'direccion nueva', '123', 1),
+(25, '32', 'direccion nueva', '123', 1),
+(26, '54', 'Zoom Cumana plaza, Cumana, Estado sucre', '789', 4);
 
 --
 -- Indexes for dumped tables
@@ -257,7 +265,7 @@ ALTER TABLE `metodos_pago`
 -- AUTO_INCREMENT for table `orden`
 --
 ALTER TABLE `orden`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 --
 -- AUTO_INCREMENT for table `producto`
 --
@@ -277,7 +285,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `venta`
 --
 ALTER TABLE `venta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
