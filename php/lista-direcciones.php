@@ -15,6 +15,9 @@
             echo "                             <td>";
             echo "                                 <p class='card-number'>".$row['direccionEnvio']."</p>";
             echo "                             </td>";
+            echo "                             <td>";
+            echo "<a class='editar-direccion btn ' value='".$row['id']."'>Editar</a>";
+            echo "                             </td>";
             echo "                         </tr> ";
             $i++;
         }

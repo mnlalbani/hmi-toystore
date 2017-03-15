@@ -26,6 +26,23 @@
     </style>
 </head>
 <body>
+                                            <div id="editar-direccion-modal" class="modal">
+                                                <div class="modal-content">
+                                                <h5 class="flow-text">Edita La Direccion</h5>
+                                                    <div class="row">
+                                                    <form class="col s12" method="POST" action="php/editar-direccion.php">
+                                                    <input type="text" name="direccion" hidden value="true">
+                                                    <input type="text" name="id" hidden class="id-direccion">
+                                                    <div class="row"> 
+                                                        <div class="input-field col s12">
+                                                        <textarea id="direccionEnvio" class="materialize-textarea direccionEditar" name="direccionEnvio"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn waves-effect waves-light col s2" type="submit">Editar</button>
+                                                    </form>
+                                                </div>
+                                                </div>
+                                            </div>
     <header>
         <div class="navbar-fixed"> <!-- Barra de Navegación -->
             <nav class="amber lighten-2">
@@ -124,6 +141,7 @@
                                                     <i class="material-icons right">add</i>
                                                 </button>
                                             </div>
+                                             
                                             </form>
                                         </div>
                                     </div>

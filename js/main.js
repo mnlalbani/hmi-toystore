@@ -11,6 +11,7 @@ else {
 view.css('height', 400);
 }
 });
+$('.modal').modal();
       //slider
       $('.slider').slider();
       //carousel
@@ -167,6 +168,20 @@ view.css('height', 400);
 			alert('Producto No Eliminado');
 		}
 	});//Fin eliminar producto
+      //Editar Direccion envio
+      $('.editar-direccion').unbind('click');
+      $('.editar-direccion').click(function(e){
+            e.preventDefault();
+            var id = $(this).attr('value');
+            $.post('php/editar-direccion.php',{id:id,mostrar:true},function(data){
+                  var respuesta = JSON.parse(data);
+                  $('.direccionEditar').val(respuesta.direccion);
+                  $('.id-direccion').val(respuesta.id)
+                  console.log(respuesta.direccion);
+                  $('.modal').modal('open');
+            });
+            //console.log($(this).attr('value'));
+      });
 
       
 
