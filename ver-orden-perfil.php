@@ -143,7 +143,7 @@
                             <tbody>
                                 <tr>
                                     <td>Producto (s)</td>
-                                    <td><span>$<?php echo $preciodefinitivo;?></span></td>
+                                    <td><span>$<?php echo $sum = ($preciototal);?></span></td>
                                 </tr>
                                 <tr>
                                     <td>Envío y manejo</td>
@@ -151,7 +151,7 @@
                                 </tr>
                                 <tr>
                                     <td>Total antes de impuestos</td>
-                                    <td><span>$<?php echo $preciodefinitivo+10;?></span></td>
+                                    <td><span>$<?php echo $sum+10;?></span></td>
                                 </tr>
                                 <tr>
                                     <td>Impuesto estimado</td>
@@ -159,7 +159,7 @@
                                 </tr>
                                 <tr>
                                     <td>Total a pagar</td>
-                                    <td><span>$<?php echo $preciodefinitivo + ((10/100)*$preciodefinitivo); ?></span></td>
+                                    <td><span>$<?php echo $_GET['preciototal']; ?></span></td>
                                 </tr>
                             </tbody>
                         </table>

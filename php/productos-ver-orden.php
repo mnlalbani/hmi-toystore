@@ -1,6 +1,7 @@
 <?php
     include("conexion.php");
     $a = 0;
+    //var_dump($_COOKIE);
     $cantidadtotal = 0;
     $preciototal = 0;
      foreach($articuloid['articuloid'] as &$values){
@@ -20,19 +21,22 @@
        echo  "<div class='card-content'>";
        echo  "<p class='truncate'>".$rows['nombre']."</p>";
        echo  "<p>Precio por unidad: $".$rows['precio']." </p>";
-       echo  "<p>Cantidad: ".$rows['cantidad']."</p>";
+       echo  "<p>Cantidad: ".$_COOKIE['cantidadarti'][$a-1]."</p>";
        echo  "</div>";
        echo  "<div class='card-action'>";
        echo  "<a href='producto.php?id=".$rows['id']."'>".$rows['nombre']."</a>";
        echo  "</div>";
        echo  "</div>";
        echo  "</div>";
-       $cantidadtotal = $rows['cantidad']+$cantidadtotal;
        $preciototal = $rows['precio']+$preciototal;
        $c++;
+       
+       
+       
       // echo $sqlarticulo;
+    }
     
-}	
+    $cantidadtotal = $_COOKIE['cantidadarti'][$a-1]+$_COOKIE['cantidadarti'][$a-1]+1;
      }		
      $preciodefinitivo = $preciototal*$cantidadtotal;	
 ?>
