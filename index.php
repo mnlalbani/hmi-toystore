@@ -76,11 +76,14 @@ nav .brand-logo {
             <nav class="light-blue lighten-2">
                 <div class="nav-wrapper">
                     <a href="index.php" class="brand-logo left">
-                        <img src="images/logo/logo.png" class="logo-img" alt="">
+                        <img src="images/logo/logo.png" class="logo-img responsive-img" alt="">
                     </a>
-                        <form method="GET" action="lista.php" style ="margin-left:30%;width:40%;" class="left">
+                    
+                        <form method="GET" action="lista.php" class="">
                                 <input type="search" class="search" placeholder="Search..." name="busqueda" id="busqueda"/>
                         </form>
+                        
+                    </div>
     
                     <ul class="right">
                         <?php
