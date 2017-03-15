@@ -66,6 +66,7 @@
                                 <?php 
                                     if(isset($_SESSION['tipo'])){
                                         if($_SESSION['tipo'] == 'admin'){
+                                            echo "<a href='registrar-producto.php'>Agrega un producto</a>";
                                             echo "<a href='admin-lista-producto.php'>Gestiona los Productos</a>";
                                             echo " <div class='section'></div>";
                                         }
