@@ -81,7 +81,7 @@ if(!empty($_GET)){
 }else{
     
     $sql = "SELECT * FROM `producto`";
-    echo $sql;
+    //echo $sql;
         $result = $mysqli -> query($sql);
         if($result->num_rows === 0){
                 echo "<div class='alert alert-info'>";
