@@ -69,6 +69,14 @@ $('.modal').modal();
             })
       })
 
+      //desactivar boton continuar en direccion
+      if($('input[name=direccionEnvio]:checked').length > 0){
+            $('.btn-direccion-carro').prop('disabled',false);
+            $('.response-direccion').prop('hidden',true);
+      }else{
+            $('.btn-direccion-carro').prop('disabled',true);
+            $('.response-direccion').prop('hidden',false);
+      }
       //comprar-direcciones
       $("#formulario-comprar-direcciones").unbind();
       $("#formulario-comprar-direcciones").on('submit',function(e){

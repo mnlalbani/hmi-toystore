@@ -108,7 +108,9 @@
                             </ul>
                         </blockquote>
                         <div class="section"></div>
-                                        <button class="col s12 center-align waves-effect waves-light btn"type="submit">Continuar</button>
+                                        <button class="col s12 center-align waves-effect waves-light btn btn-direccion-carro"type="submit">Continuar</button>
+                                        <br>
+                                        <h5 class="col offset-s1 red-text flow-text response-direccion">Elija una Dirección de Envío</h5>
                                     </div>
                                 </div>
                             </form>
