@@ -3,6 +3,9 @@
     if(!isset($_SESSION['usuarioid'])){
         header("location: index.php");
     }
+    if(isset($_GET['vaciar'])){
+        unset($_SESSION['carrito']);
+    }
     include("php/perfil-usuario.php");
 ?>
 <!DOCTYPE html>

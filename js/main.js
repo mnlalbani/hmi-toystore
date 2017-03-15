@@ -122,7 +122,7 @@ view.css('height', 400);
 				window.location = "checkout.php";
 			}  */
                   alert("Orden Realizada Exitosamente");
-                  window.location.href = "orden-perfil.php";
+                  window.location.href = "orden-perfil.php?vaciar=true";
             })
       })
       //formulario carro , redirect on sesssion check
